@@ -227,6 +227,15 @@ h3 {
 
 .section { padding: 104px 0; }
 
+.section-about {
+  padding-bottom: 18px;
+  background: var(--surface);
+}
+
+.about-copy { max-width: 790px; }
+
+.about-copy > p:last-child { margin-bottom: 0; font-size: 1.05rem; }
+
 .section h2 {
   margin-bottom: 20px;
   color: var(--ink);

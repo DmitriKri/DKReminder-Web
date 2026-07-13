@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DKReminder — важливе не обов’язково тримати в голові</title>
-  <meta name="description" content="DKReminder допомагає створювати нагадування для важливих справ: готові варіанти, гнучкі повторення, ручний старт серій і деталі для зустрічей та дедлайнів." />
-  <link rel="alternate" hreflang="uk" href="index.html" />
-  <link rel="alternate" hreflang="en" href="index-en.html" />
+  <title>DKReminder — Flexible Reminder App for Android</title>
+  <meta name="description" content="DKReminder is an Android reminder app with ready-made options, flexible recurrence, manual cycles, and details for meetings and deadlines. No account required; data is stored locally." />
+  <meta name="google-site-verification" content="KhQunLDjFaeTSHhb8cHMIicNH8bAOomlCbw53O-4ivA" />
+  <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/" />
+  <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/" />
+  <link rel="alternate" hreflang="uk" href="https://dmitrikri.github.io/DKReminder-Web/index-uk.html" />
+  <link rel="alternate" hreflang="x-default" href="https://dmitrikri.github.io/DKReminder-Web/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DKReminder" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:title" content="DKReminder — Flexible Reminder App for Android" />
+  <meta property="og:description" content="Flexible recurrence, manual cycles, deadlines, and meeting details. No account required." />
+  <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/" />
+  <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
+  <meta property="og:image:alt" content="DKReminder emblem on a dark background" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DKReminder — Flexible Reminder App for Android" />
+  <meta name="twitter:description" content="Flexible recurrence, manual cycles, deadlines, and meeting details. No account required." />
+  <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
+  <meta name="twitter:image:alt" content="DKReminder emblem on a dark background" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
@@ -14,60 +33,82 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "DKReminder",
+      "url": "https://dmitrikri.github.io/DKReminder-Web/",
+      "inLanguage": ["en", "uk"]
+    }
+  </script>
 </head>
 <body class="landing-page">
   <header class="site-hero">
-    <nav class="site-nav" aria-label="Головна навігація">
-      <a class="brand-link brand-link-light" href="index.html" aria-label="DKReminder — головна сторінка">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="brand-link brand-link-light" href="index.html" aria-label="DKReminder home page">
         <img src="assets/app-icon-192.png" alt="" width="38" height="38" />
         <span>DKReminder</span>
       </a>
       <div class="nav-actions">
-        <div class="language-switch" aria-label="Мова сторінки">
-          <a class="language-link is-active" href="index.html" lang="uk" hreflang="uk" aria-current="page">UA</a>
-          <a class="language-link" href="index-en.html" lang="en" hreflang="en">EN</a>
+        <div class="language-switch" aria-label="Page language">
+          <a class="language-link" href="index-uk.html" lang="uk" hreflang="uk">UA</a>
+          <a class="language-link is-active" href="index.html" lang="en" hreflang="en" aria-current="page">EN</a>
         </div>
-        <a href="privacy.html">Приватність</a>
+        <a href="privacy-en.html">Privacy</a>
       </div>
     </nav>
 
     <div class="hero-content">
       <section class="hero-copy" aria-labelledby="hero-title">
-        <p class="eyebrow">DKReminder — менеджер нагадувань</p>
-        <h1 id="hero-title">Важливе — не обов’язково тримати в голові.</h1>
+        <p class="eyebrow">DKReminder — reminder manager</p>
+        <h1 id="hero-title">Important things don't have to stay in your head.</h1>
         <p class="hero-lead">
-          Обирайте готові варіанти, налаштовуйте гнучкі повторення й зберігайте
-          деталі справ — щоб повертатися до них у потрібний момент.
+          Choose ready-made options, set flexible recurrence, and keep the details
+          of your tasks close — so you can return to them at the right moment.
         </p>
-        <div class="hero-meta" aria-label="Статус застосунку">
-          <span class="status-badge">Скоро в Google Play</span>
-          <span>Без акаунта</span>
-          <span>Зберігаються локально</span>
+        <div class="hero-meta" aria-label="App status">
+          <span class="status-badge">Coming soon to Google Play</span>
+          <span>No account</span>
+          <span>Stored locally</span>
         </div>
       </section>
 
-      <div class="hero-emblem" aria-label="Емблема DKReminder">
-        <img src="assets/app-icon-hero.png" alt="Емблема DKReminder: літери D і K, годинник та список нагадувань" width="512" height="512" />
+      <div class="hero-emblem" aria-label="DKReminder emblem">
+        <img src="assets/app-icon-hero.png" alt="DKReminder emblem: D and K letters, a clock, and a reminder list" width="512" height="512" />
       </div>
     </div>
   </header>
 
   <main>
+    <section class="section section-about" aria-labelledby="about-app-title">
+      <div class="section-inner about-copy">
+        <p class="eyebrow eyebrow-dark">For Android</p>
+        <h2 id="about-app-title">A reminder app for Android, shaped around your routine.</h2>
+        <p>
+          DKReminder helps with one-time and recurring reminders for everyday
+          tasks, meetings, and deadlines. Start with a ready-made option, choose
+          recurrence by schedule or from completion time, or start a manual cycle
+          when it suits you.
+        </p>
+      </div>
+    </section>
+
     <section class="section section-ready" id="ready" aria-labelledby="ready-title">
       <div class="section-inner feature-layout">
         <div class="section-copy">
-          <p class="eyebrow eyebrow-dark">Почати легко</p>
-          <h2 id="ready-title">Готовий варіант — і нагадування вже має основу.</h2>
+          <p class="eyebrow eyebrow-dark">Get started easily</p>
+          <h2 id="ready-title">Choose a ready-made option and start with the essentials already set.</h2>
           <p>
-            Оберіть варіант для частих справ: води, перерв, дому, документів,
-            тренувань або важливих подій. Змініть назву, час і повторення під
-            себе — перед збереженням усе лишається під вашим контролем.
+            Choose an option for everyday tasks: water, breaks, home, documents,
+            workouts, or important events. Change the title, time, and recurrence
+            to suit you — you stay in control before saving.
           </p>
-          <p class="supporting-line">Десятки готових варіантів для частих справ.</p>
+          <p class="supporting-line">Dozens of ready-made options for everyday tasks.</p>
         </div>
         <figure class="app-screen app-screen-catalog">
-          <img src="assets/screenshots/source/01-preset-catalog-uk.png" alt="Екран створення нагадування з готовими варіантами та обраними" width="1080" height="2400" />
-          <figcaption>Оберіть основу й налаштуйте її під себе.</figcaption>
+          <img src="assets/screenshots/source/01-preset-catalog-en.png" alt="The reminder creation screen with ready-made options and favorites" width="1080" height="2400" />
+          <figcaption>Choose a foundation and make it your own.</figcaption>
         </figure>
       </div>
     </section>
@@ -75,60 +116,60 @@
     <section class="section section-recurrence" aria-labelledby="recurrence-title">
       <div class="section-inner">
         <div class="recurrence-copy">
-          <p class="eyebrow eyebrow-dark">Ваш ритм</p>
-          <h2 id="recurrence-title">Гнучкі повторення працюють так, як потрібно вам.</h2>
+          <p class="eyebrow eyebrow-dark">Your rhythm</p>
+          <h2 id="recurrence-title">Flexible recurrence works the way you need it to.</h2>
           <p class="section-intro">
-            Для регулярних справ можна обрати зрозумілий спосіб відліку — за
-            заданим графіком або від моменту, коли ви завершили попередню дію.
+            For recurring tasks, choose a clear way to count time: by schedule
+            or from the moment you completed the previous action.
           </p>
         </div>
 
         <div class="timeline-grid">
           <article class="timeline-card">
-            <h3>За графіком</h3>
-            <div class="timeline" aria-label="Приклад фіксованого графіка">
+            <h3>By schedule</h3>
+            <div class="timeline" aria-label="Example of a fixed schedule">
               <span>12:00</span><i></i><span>15:00</span><i></i><span>18:00</span>
             </div>
-            <p>Відклали сигнал на 15 хвилин — наступне нагадування лишається у своєму звичному часі.</p>
+            <p>Snooze a reminder for 15 minutes — the next reminder stays at its usual time.</p>
           </article>
           <article class="timeline-card">
-            <h3>Від завершення</h3>
-            <div class="timeline" aria-label="Приклад відліку від завершення">
+            <h3>From completion time</h3>
+            <div class="timeline" aria-label="Example of counting from completion">
               <span>12:15</span><i></i><span>15:15</span><i></i><span>18:15</span>
             </div>
-            <p>Завершили дію о 12:15 — наступний інтервал починається від 12:15.</p>
+            <p>Complete an action at 12:15 — the next interval begins from 12:15.</p>
           </article>
         </div>
 
-        <p class="section-note">Відкладайте, завершуйте, переглядайте історію та за потреби отримуйте зведення про пропущені нагадування.</p>
+        <p class="section-note">Snooze, complete, review history, and receive a summary of missed reminders when you need one.</p>
       </div>
     </section>
 
     <section class="section section-manual" aria-labelledby="manual-title">
       <div class="section-inner feature-layout feature-layout-reverse">
-        <div class="screenshot-carousel app-screen app-screen-manual" data-carousel aria-label="Скріншоти налаштування ручного циклу">
+        <div class="screenshot-carousel app-screen app-screen-manual" data-carousel aria-label="Manual cycle setup screenshots">
           <figure class="carousel-slide">
-            <img src="assets/screenshots/source/02-manual-cycle-Part-1-uk.png" alt="Налаштування ручного циклу: інтервал, активне вікно та нагадування про старт" width="1080" height="2400" loading="lazy" />
-            <figcaption>Інтервал, активне вікно та нагадування про старт.</figcaption>
+            <img src="assets/screenshots/source/02-manual-cycle-Part-1-en.png" alt="Manual cycle settings: interval, active window, and a reminder to start" width="1080" height="2400" loading="lazy" />
+            <figcaption>Interval, active window, and a reminder to start.</figcaption>
           </figure>
           <figure class="carousel-slide" hidden>
-            <img src="assets/screenshots/source/02-manual-cycle-Part-2-uk.png" alt="Продовження налаштування ручного циклу: час нагадування, курс і сигнал" width="1080" height="2400" loading="lazy" />
-            <figcaption>Додаткові налаштування серії.</figcaption>
+            <img src="assets/screenshots/source/02-manual-cycle-Part-2-en.png" alt="More manual cycle settings: reminder time, course, and sound" width="1080" height="2400" loading="lazy" />
+            <figcaption>Additional settings for the manual cycle.</figcaption>
           </figure>
-          <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Попередній скріншот" hidden>←</button>
-          <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Наступний скріншот">→</button>
+          <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous screenshot" hidden>←</button>
+          <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next screenshot">→</button>
         </div>
         <div class="section-copy">
-          <p class="eyebrow eyebrow-dark">Починайте, коли зручно</p>
-          <h2 id="manual-title">Нагадування починаються тоді, коли починаєте ви.</h2>
+          <p class="eyebrow eyebrow-dark">Start when it works for you</p>
+          <h2 id="manual-title">Reminders begin when you do.</h2>
           <p>
-            DKReminder нагадає почати. Ви запускаєте серію у зручний момент,
-            а наступні спрацювання йдуть від реального старту в межах обраного
-            часу.
+            DKReminder reminds you to start the manual cycle. Begin whenever it
+            works for you, and each following occurrence is scheduled from the
+            actual start time within the active window.
           </p>
           <div class="example-callout">
-            <strong>Приклад</strong>
-            <p>Запустили серію о 9:30 з двогодинним інтервалом — наступні нагадування надійдуть о 11:30, 13:30 та далі в межах обраного часу.</p>
+            <strong>Example</strong>
+            <p>Start a cycle at 9:30 with a two-hour interval, and the next reminders arrive at 11:30, 13:30, and so on within the active window.</p>
           </div>
         </div>
       </div>
@@ -137,49 +178,49 @@
     <section class="section section-scenarios" aria-labelledby="scenarios-title">
       <div class="section-inner">
         <div class="section-heading section-narrow">
-          <p class="eyebrow eyebrow-dark">Коли важливий не лише час</p>
-          <h2 id="scenarios-title">Збережіть контекст поруч із нагадуванням.</h2>
+          <p class="eyebrow eyebrow-dark">When more than time matters</p>
+          <h2 id="scenarios-title">Keep the context alongside the reminder.</h2>
           <p>
-            Для зустрічі або дедлайну можна зібрати потрібні деталі в одному
-            місці, а потім повернутися до них у потрібний момент.
+            For a meeting or deadline, gather the details you need in one place,
+            then return to them at the right moment.
           </p>
         </div>
 
         <div class="scenario-stack">
           <article class="scenario-card">
             <div class="scenario-copy">
-              <h3>Зустріч</h3>
-              <p>Учасники, формат, онлайн-платформа, питання та підготовка — усе, що варто мати перед розмовою.</p>
+              <h3>Meeting</h3>
+              <p>Participants, format, online platform, questions, and preparation — everything worth having before the conversation.</p>
             </div>
-            <div class="screenshot-carousel app-screen scenario-screen" data-carousel aria-label="Скріншоти сценарію Зустріч">
+            <div class="screenshot-carousel app-screen scenario-screen" data-carousel aria-label="Meeting scenario screenshots">
               <figure class="carousel-slide">
-                <img src="assets/screenshots/source/03-meeting-online-Part-1-uk.png" alt="Сценарій Зустріч з учасником, онлайн-форматом і платформою Microsoft Teams" width="1080" height="2400" loading="lazy" />
-                <figcaption>Зберігайте учасників, формат і платформу.</figcaption>
+                <img src="assets/screenshots/source/03-meeting-online-Part-1-en.png" alt="Meeting scenario with a participant, online format, and Microsoft Teams platform" width="1080" height="2400" loading="lazy" />
+                <figcaption>Keep participants, format, and platform together.</figcaption>
               </figure>
               <figure class="carousel-slide" hidden>
-                <img src="assets/screenshots/source/03-meeting-online-Part-2-uk.png" alt="Продовження сценарію Зустріч з полями підготовки, речей і нотаток" width="1080" height="2400" loading="lazy" />
-                <figcaption>Підготуйте питання, речі та нотатки.</figcaption>
+                <img src="assets/screenshots/source/03-meeting-online-Part-2-en.png" alt="More Meeting scenario details: preparation, things to bring, and notes" width="1080" height="2400" loading="lazy" />
+                <figcaption>Prepare questions, things to bring, and notes.</figcaption>
               </figure>
-              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Попередній скріншот" hidden>←</button>
-              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Наступний скріншот">→</button>
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous screenshot" hidden>←</button>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next screenshot">→</button>
             </div>
           </article>
           <article class="scenario-card scenario-card-reverse">
             <div class="scenario-copy">
-              <h3>Дедлайн</h3>
-              <p>Строк, коли нагадати, кому або куди потрібно звернутися, що підготувати чи перевірити.</p>
+              <h3>Deadline</h3>
+              <p>The due date, when to remind you, who to contact, and what to prepare or check.</p>
             </div>
-            <div class="screenshot-carousel app-screen scenario-screen" data-carousel aria-label="Скріншоти сценарію Дедлайн">
+            <div class="screenshot-carousel app-screen scenario-screen" data-carousel aria-label="Deadline scenario screenshots">
               <figure class="carousel-slide">
-                <img src="assets/screenshots/source/04-deadline-Part-1-uk.png" alt="Сценарій Дедлайн з датою, способом нагадування та деталями документа" width="1080" height="2400" loading="lazy" />
-                <figcaption>Вкажіть строк і спосіб нагадування.</figcaption>
+                <img src="assets/screenshots/source/04-deadline-Part-1-en.png" alt="Deadline scenario with a date, reminder method, and document details" width="1080" height="2400" loading="lazy" />
+                <figcaption>Set the deadline and how to be reminded.</figcaption>
               </figure>
               <figure class="carousel-slide" hidden>
-                <img src="assets/screenshots/source/04-deadline-Part-2-uk.png" alt="Продовження сценарію Дедлайн з адресатом, ідентифікатором і підготовкою" width="1080" height="2400" loading="lazy" />
-                <figcaption>Додайте адресу, ідентифікатор і підготовку.</figcaption>
+                <img src="assets/screenshots/source/04-deadline-Part-2-en.png" alt="More Deadline scenario details: recipient, identifier, and preparation" width="1080" height="2400" loading="lazy" />
+                <figcaption>Add an addressee, identifier, and preparation.</figcaption>
               </figure>
-              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Попередній скріншот" hidden>←</button>
-              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Наступний скріншот">→</button>
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous screenshot" hidden>←</button>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next screenshot">→</button>
             </div>
           </article>
         </div>
@@ -189,14 +230,14 @@
     <section class="section section-privacy" aria-labelledby="privacy-title">
       <div class="section-inner privacy-band">
         <div>
-          <p class="eyebrow eyebrow-dark">Приватність</p>
-          <h2 id="privacy-title">Ваші нагадування зберігаються локально на вашому пристрої.</h2>
+          <p class="eyebrow eyebrow-dark">Privacy</p>
+          <h2 id="privacy-title">Your reminders are stored locally on your device.</h2>
           <p>
-            DKReminder не потребує акаунта, не надсилає ваші нагадування на
-            сервери розробника та не використовує рекламні або аналітичні SDK.
+            DKReminder does not require an account, does not send reminders to
+            developer-operated servers, and does not include advertising or analytics SDKs.
           </p>
         </div>
-        <a class="text-button" href="privacy.html">Політика конфіденційності</a>
+        <a class="text-button" href="privacy-en.html">Privacy Policy</a>
       </div>
     </section>
 
@@ -204,10 +245,10 @@
       <div class="section-inner final-callout">
         <img class="app-icon" src="assets/app-icon-192.png" alt="" width="86" height="86" />
         <div>
-          <h2 id="final-title">DKReminder готується до Google Play.</h2>
-          <p>Додайте важливе в систему нагадувань уже зараз — і повертайтеся до нього тоді, коли це справді потрібно.</p>
+          <h2 id="final-title">DKReminder is coming to Google Play.</h2>
+          <p>Add important things to your reminder system now — and return to them when they truly matter.</p>
         </div>
-        <span class="status-badge status-badge-dark">Скоро в Google Play</span>
+        <span class="status-badge status-badge-dark">Coming soon to Google Play</span>
       </div>
     </section>
   </main>
