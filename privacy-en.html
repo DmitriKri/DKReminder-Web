@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — DKReminder</title>
-  <meta name="description" content="DKReminder Privacy Policy: reminder data is stored locally, the app does not use developer-operated servers, advertising, or analytics SDKs, and Android backup behavior is explained." />
+  <meta name="description" content="DKReminder Privacy Policy: locally stored reminder data, Android backup, and technical subscription data handled through Google Play Billing." />
   <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <link rel="alternate" hreflang="uk" href="https://dmitrikri.github.io/DKReminder-Web/privacy.html" />
@@ -14,13 +14,13 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="uk_UA" />
   <meta property="og:title" content="Privacy Policy — DKReminder" />
-  <meta property="og:description" content="How DKReminder stores data locally and explains Android backup." />
+  <meta property="og:description" content="How DKReminder stores data locally and uses Android backup and Google Play Billing." />
   <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta property="og:image:alt" content="DKReminder emblem on a dark background" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy — DKReminder" />
-  <meta name="twitter:description" content="How DKReminder stores data locally and explains Android backup." />
+  <meta name="twitter:description" content="How DKReminder stores data locally and uses Android backup and Google Play Billing." />
   <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta name="twitter:image:alt" content="DKReminder emblem on a dark background" />
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -40,7 +40,7 @@
     </p>
 
     <h1>Privacy Policy</h1>
-    <p class="muted">App: <strong>DKReminder</strong><br />Last updated: July 13, 2026</p>
+    <p class="muted">App: <strong>DKReminder</strong><br />Last updated: July 28, 2026</p>
 
     <h2>In brief</h2>
     <p>
@@ -69,14 +69,32 @@
       The app does not use advertising networks, analytics services, or third-party
       SDKs that collect reminder content or usage statistics.
     </p>
+    <p>
+      DKReminder uses Google Play Billing to offer and verify the annual DKReminder
+      Pro subscription. Google Play may process Google Account, purchase, and
+      payment information under the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+      DKReminder does not receive your payment card details.
+    </p>
+    <p>
+      The app receives only the technical product, purchase, and status information
+      needed to provide Pro access and stores minimal access state locally.
+      DKReminder does not operate a billing backend or user accounts. Reminder
+      content is not sent to Google Play Billing.
+    </p>
 
     <h2>Android backup and device transfer</h2>
     <p>
       Depending on your Android and Google Account backup settings, Android may
-      include DKReminder data in a system backup or transfer it directly to another
-      device. These operations are performed by Android’s backup and device-transfer
-      services, not by a DKReminder server. You can manage system backup settings on
-      your device.
+      include allowed DKReminder data in a system backup or transfer it directly to
+      another device. This includes the reminder database, onboarding state, and the
+      initial Pro access start date. These operations are performed by Android’s
+      backup and device-transfer services, not by a DKReminder server.
+    </p>
+    <p>
+      Paid subscription confirmation, the local billing cache, and debug testing
+      settings are excluded from Android backup. You can manage system backup
+      settings on your device.
     </p>
 
     <h2>Manual backup and restore</h2>
@@ -84,7 +102,9 @@
       If you use DKReminder’s <strong>Export data</strong> feature, the app creates
       a backup file in the location you choose. You are responsible for storing,
       sharing, and deleting that file. When you import a backup, its data replaces
-      the current data in the app.
+      the current data in the app. The file includes the initial Pro access start
+      date so that restoring it does not create a new 30-day period, but it does not
+      contain paid subscription status, the billing cache, or payment information.
     </p>
 
     <h2>Permissions and their purpose</h2>

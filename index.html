@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DKReminder — Flexible Reminder App for Android</title>
-  <meta name="description" content="DKReminder is an Android reminder app with ready-made options, flexible recurrence, manual cycles, and details for meetings and deadlines. No account required; data is stored locally." />
+  <meta name="description" content="DKReminder is an Android reminder app. Basic reminders and the full editor work without a subscription; Pro adds guided creation, manual cycles, and scenarios." />
   <meta name="google-site-verification" content="KhQunLDjFaeTSHhb8cHMIicNH8bAOomlCbw53O-4ivA" />
   <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/" />
   <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/" />
@@ -15,7 +15,7 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="uk_UA" />
   <meta property="og:title" content="DKReminder — Flexible Reminder App for Android" />
-  <meta property="og:description" content="Flexible recurrence, manual cycles, deadlines, and meeting details. No account required." />
+  <meta property="og:description" content="Basic reminders without a subscription, plus advanced automation and scenarios with DKReminder Pro." />
   <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/" />
   <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta property="og:image:alt" content="DKReminder emblem on a dark background" />
@@ -23,7 +23,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DKReminder — Flexible Reminder App for Android" />
-  <meta name="twitter:description" content="Flexible recurrence, manual cycles, deadlines, and meeting details. No account required." />
+  <meta name="twitter:description" content="Basic reminders without a subscription, plus advanced automation and scenarios with DKReminder Pro." />
   <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta name="twitter:image:alt" content="DKReminder emblem on a dark background" />
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -82,15 +82,20 @@
 
   <main>
     <section class="section section-about" aria-labelledby="about-app-title">
-      <div class="section-inner about-copy">
-        <p class="eyebrow eyebrow-dark">For Android</p>
-        <h2 id="about-app-title">A reminder app for Android, shaped around your routine.</h2>
-        <p>
-          DKReminder helps with one-time and recurring reminders for everyday
-          tasks, meetings, and deadlines. Start with a ready-made option, choose
-          recurrence by schedule or from completion time, or start a manual cycle
-          when it suits you.
-        </p>
+      <div class="section-inner about-layout">
+        <div class="about-copy">
+          <p class="eyebrow eyebrow-dark">For Android</p>
+          <h2 id="about-app-title">A reminder app for Android, shaped around your routine.</h2>
+          <p>
+            DKReminder helps with one-time and recurring reminders for everyday
+            tasks. Start with a ready-made option and configure basic recurrence.
+            When you need more advanced automation or dedicated Meeting and Deadline
+            scenarios, DKReminder Pro adds them.
+          </p>
+        </div>
+        <figure class="value-illustration">
+          <img src="assets/onboarding-value-scene.webp" alt="A person hands everyday tasks to an app that helps remember them" width="1200" height="487" loading="lazy" />
+        </figure>
       </div>
     </section>
 
@@ -110,6 +115,56 @@
           <img src="assets/screenshots/source/01-preset-catalog-en.png" alt="The reminder creation screen with ready-made options and favorites" width="1080" height="2400" />
           <figcaption>Choose a foundation and make it your own.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="section section-pro" aria-labelledby="pro-title">
+      <div class="section-inner">
+        <div class="pro-heading">
+          <p class="eyebrow eyebrow-dark">DKReminder Pro</p>
+          <h2 id="pro-title">More control for reminders that need it.</h2>
+          <p>
+            Pro adds guided creation, more advanced automation, and dedicated
+            scenarios. DKReminder remains fully useful without a subscription:
+            basic reminders, the full editor, history, backups, and access to your
+            own data continue to work.
+          </p>
+        </div>
+
+        <ul class="pro-feature-grid" aria-label="DKReminder Pro features">
+          <li>Step-by-step reminder creation</li>
+          <li>Daily manual cycle</li>
+          <li>Schedule from last completion</li>
+          <li>Custom signal repeat</li>
+          <li>Active missed-reminder control</li>
+          <li>Meeting scenario</li>
+          <li>Deadline scenario</li>
+        </ul>
+
+        <div class="pro-terms-grid">
+          <article class="pro-term-card">
+            <h3>Initial access without a subscription</h3>
+            <p>
+              For 30 days after the first launch, all Pro features are available
+              without a subscription. If you subscribe earlier, this time is not
+              added to the subscription term.
+            </p>
+            <p>
+              No payment method is required. A subscription is not started
+              automatically, so there are no charges when initial access ends.
+            </p>
+          </article>
+          <article class="pro-term-card">
+            <h3>Annual subscription through Google Play</h3>
+            <p>
+              The subscription renews automatically until canceled. Google Play
+              shows the current localized price and billing period in the app
+              before purchase; the website does not duplicate a price that may
+              vary by country.
+            </p>
+            <p>You can manage or cancel the subscription in Google Play.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -133,7 +188,7 @@
             <p>Snooze a reminder for 15 minutes — the next reminder stays at its usual time.</p>
           </article>
           <article class="timeline-card">
-            <h3>From completion time</h3>
+            <h3 class="heading-with-badge">From completion time <span class="pro-badge">PRO</span></h3>
             <div class="timeline" aria-label="Example of counting from completion">
               <span>12:15</span><i></i><span>15:15</span><i></i><span>18:15</span>
             </div>
@@ -141,7 +196,10 @@
           </article>
         </div>
 
-        <p class="section-note">Snooze, complete, review history, and receive a summary of missed reminders when you need one.</p>
+        <p class="section-note">
+          Snooze, complete, and review history.
+          <span class="pro-inline"><span class="pro-badge">PRO</span> Active missed-reminder control provides dedicated summaries.</span>
+        </p>
       </div>
     </section>
 
@@ -160,7 +218,10 @@
           <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next screenshot">→</button>
         </div>
         <div class="section-copy">
-          <p class="eyebrow eyebrow-dark">Start when it works for you</p>
+          <div class="eyebrow-row">
+            <p class="eyebrow eyebrow-dark">Start when it works for you</p>
+            <span class="pro-badge">PRO</span>
+          </div>
           <h2 id="manual-title">Reminders begin when you do.</h2>
           <p>
             DKReminder reminds you to start the manual cycle. Begin whenever it
@@ -189,7 +250,7 @@
         <div class="scenario-stack">
           <article class="scenario-card">
             <div class="scenario-copy">
-              <h3>Meeting</h3>
+              <h3 class="heading-with-badge">Meeting <span class="pro-badge">PRO</span></h3>
               <p>Participants, format, online platform, questions, and preparation — everything worth having before the conversation.</p>
             </div>
             <div class="screenshot-carousel app-screen scenario-screen" data-carousel aria-label="Meeting scenario screenshots">
@@ -207,7 +268,7 @@
           </article>
           <article class="scenario-card scenario-card-reverse">
             <div class="scenario-copy">
-              <h3>Deadline</h3>
+              <h3 class="heading-with-badge">Deadline <span class="pro-badge">PRO</span></h3>
               <p>The due date, when to remind you, who to contact, and what to prepare or check.</p>
             </div>
             <div class="screenshot-carousel app-screen scenario-screen" data-carousel aria-label="Deadline scenario screenshots">
@@ -235,6 +296,8 @@
           <p>
             DKReminder does not require an account, does not send reminders to
             developer-operated servers, and does not include advertising or analytics SDKs.
+            Google Play handles the Pro subscription; reminder content is not sent
+            to Google Play Billing.
           </p>
         </div>
         <a class="text-button" href="privacy-en.html">Privacy Policy</a>

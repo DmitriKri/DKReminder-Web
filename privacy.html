@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Політика конфіденційності — DKReminder</title>
-  <meta name="description" content="Політика конфіденційності DKReminder: дані нагадувань зберігаються локально, застосунок не використовує власні сервери, рекламу чи аналітичні SDK; окремо пояснено резервне копіювання Android." />
+  <meta name="description" content="Політика конфіденційності DKReminder: локальні дані нагадувань, Android backup і технічні дані підписки, які обробляє Google Play Billing." />
   <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <link rel="alternate" hreflang="uk" href="https://dmitrikri.github.io/DKReminder-Web/privacy.html" />
@@ -14,13 +14,13 @@
   <meta property="og:locale" content="uk_UA" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:title" content="Політика конфіденційності — DKReminder" />
-  <meta property="og:description" content="Як DKReminder зберігає дані локально та пояснює резервне копіювання Android." />
+  <meta property="og:description" content="Як DKReminder зберігає дані локально та використовує Android backup і Google Play Billing." />
   <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/privacy.html" />
   <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta property="og:image:alt" content="Емблема DKReminder на темному тлі" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Політика конфіденційності — DKReminder" />
-  <meta name="twitter:description" content="Як DKReminder зберігає дані локально та пояснює резервне копіювання Android." />
+  <meta name="twitter:description" content="Як DKReminder зберігає дані локально та використовує Android backup і Google Play Billing." />
   <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta name="twitter:image:alt" content="Емблема DKReminder на темному тлі" />
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -40,7 +40,7 @@
     </p>
 
     <h1>Політика конфіденційності</h1>
-    <p class="muted">Застосунок: <strong>DKReminder</strong><br />Дата оновлення: 13 липня 2026 р.</p>
+    <p class="muted">Застосунок: <strong>DKReminder</strong><br />Дата оновлення: 28 липня 2026 р.</p>
 
     <h2>Коротко</h2>
     <p>
@@ -69,14 +69,32 @@
       не використовує рекламні мережі, аналітичні сервіси або сторонні SDK, які
       збирають вміст нагадувань чи статистику використання.
     </p>
+    <p>
+      Для оформлення та перевірки річної підписки DKReminder Pro застосунок
+      використовує Google Play Billing. Google Play може обробляти дані вашого
+      облікового запису Google, покупки й оплати відповідно до
+      <a href="https://policies.google.com/privacy">Політики конфіденційності Google</a>.
+      DKReminder не отримує реквізити вашої платіжної картки.
+    </p>
+    <p>
+      Застосунок отримує лише технічні відомості про продукт, покупку та її стан,
+      потрібні для надання Pro-доступу, і зберігає мінімальний локальний стан
+      доступу. Власного billing-сервера або облікових записів DKReminder немає.
+      Вміст нагадувань не передається Google Play Billing.
+    </p>
 
     <h2>Резервне копіювання Android і перенесення на інший пристрій</h2>
     <p>
       Залежно від налаштувань резервного копіювання Android і вашого облікового
-      запису Google, Android може включати дані DKReminder до системної резервної
-      копії або безпосередньо переносити їх на інший пристрій. Це виконує система
-      Android, а не сервер DKReminder. Керувати системним резервним копіюванням
-      можна в налаштуваннях пристрою.
+      запису Google, Android може включати дозволені дані DKReminder до системної
+      резервної копії або безпосередньо переносити їх на інший пристрій. До них
+      належать база даних нагадувань, стан онбордингу та дата початку початкового
+      Pro-доступу. Це виконує система Android, а не сервер DKReminder.
+    </p>
+    <p>
+      Підтвердження оплаченої підписки, локальний billing cache і debug-налаштування
+      тестування не входять до Android backup. Керувати системним резервним
+      копіюванням можна в налаштуваннях пристрою.
     </p>
 
     <h2>Ручне резервне копіювання та відновлення</h2>
@@ -84,7 +102,9 @@
       Якщо ви використовуєте функцію <strong>«Експортувати дані»</strong>, застосунок
       створює файл резервної копії у вибраному вами місці. Ви самостійно контролюєте
       зберігання, передавання та видалення цього файла. Під час імпорту резервної
-      копії дані з неї замінюють поточні дані застосунку.
+      копії дані з неї замінюють поточні дані застосунку. Файл містить дату початку
+      початкового Pro-доступу, щоб відновлення не створювало новий 30-денний період,
+      але не містить оплачений статус підписки, billing cache або платіжні дані.
     </p>
 
     <h2>Дозволи та навіщо вони потрібні</h2>
