@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DKReminder — Flexible Reminder App for Android</title>
-  <meta name="description" content="DKReminder is an Android reminder app. Basic reminders and the full editor work without a subscription; Pro adds guided creation, manual cycles, and scenarios." />
+  <meta name="description" content="DKReminder is a local-first Android reminder app with flexible recurrence, 17 interface languages, optional reminder exchange, and Pro automation." />
   <meta name="google-site-verification" content="KhQunLDjFaeTSHhb8cHMIicNH8bAOomlCbw53O-4ivA" />
   <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/" />
   <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/" />
@@ -15,7 +15,7 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="uk_UA" />
   <meta property="og:title" content="DKReminder — Flexible Reminder App for Android" />
-  <meta property="og:description" content="Basic reminders without a subscription, plus advanced automation and scenarios with DKReminder Pro." />
+  <meta property="og:description" content="Local-first reminders, 17 interface languages, optional reminder exchange, and advanced automation with DKReminder Pro." />
   <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/" />
   <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta property="og:image:alt" content="DKReminder emblem with a lamp and reminder checklist on a dark background" />
@@ -23,7 +23,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DKReminder — Flexible Reminder App for Android" />
-  <meta name="twitter:description" content="Basic reminders without a subscription, plus advanced automation and scenarios with DKReminder Pro." />
+  <meta name="twitter:description" content="Local-first reminders, 17 interface languages, optional reminder exchange, and advanced automation with DKReminder Pro." />
   <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta name="twitter:image:alt" content="DKReminder emblem with a lamp and reminder checklist on a dark background" />
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -68,8 +68,8 @@
           of your tasks close — so you can return to them at the right moment.
         </p>
         <div class="hero-meta" aria-label="App status">
-          <span class="status-badge">Coming soon to Google Play</span>
-          <span>No account</span>
+          <span class="status-badge">Closed testing on Google Play</span>
+          <span>No account required for local reminders</span>
           <span>Stored locally</span>
         </div>
       </section>
@@ -136,12 +136,14 @@
         <ul class="pro-feature-grid" aria-label="DKReminder Pro features">
           <li>Step-by-step reminder creation</li>
           <li>Daily manual cycle</li>
+          <li>Monthly recurrence from month end</li>
           <li>Schedule from last completion</li>
           <li>Custom repeat alerts</li>
           <li>Custom sound playback count</li>
           <li>Active missed-reminder control</li>
           <li>Meeting scenario</li>
           <li>Deadline scenario</li>
+          <li>Send reminders to approved recipients</li>
         </ul>
 
         <div class="pro-terms-grid">
@@ -291,19 +293,94 @@
       </div>
     </section>
 
+    <section class="section section-exchange" aria-labelledby="exchange-title">
+      <div class="section-inner">
+        <div class="section-heading section-narrow">
+          <p class="eyebrow eyebrow-dark">Reminder exchange</p>
+          <h2 id="exchange-title">Send a complete reminder. The recipient decides what happens next.</h2>
+          <p class="section-intro">
+            Exchange is optional. Local reminders still work without an account.
+            When you choose Exchange, DKReminder sends the reminder you prepared —
+            not a shared task and not a chat message.
+          </p>
+        </div>
+        <div class="exchange-grid">
+          <article class="exchange-card">
+            <span class="exchange-step" aria-hidden="true">1</span>
+            <h3>Permission first</h3>
+            <p>Sending permission is one-way and must be approved by the recipient. Either person can revoke it later.</p>
+          </article>
+          <article class="exchange-card">
+            <span class="exchange-step" aria-hidden="true">2</span>
+            <h3>An independent copy</h3>
+            <p>The recipient can reject the item or open a filled editor, change anything, and save a new local reminder.</p>
+          </article>
+          <article class="exchange-card">
+            <span class="exchange-step" aria-hidden="true">3</span>
+            <h3>A private outcome</h3>
+            <p>The sender cannot control the recipient’s copy and does not learn whether it was opened, imported, completed, or deleted.</p>
+          </article>
+        </div>
+        <p class="section-note">
+          Prepare the reminder once, then choose <strong>Save</strong>,
+          <strong>Send</strong>, or <strong>Save and send</strong>. The recipient is
+          selected by their exact verified Exchange email address; DKReminder has
+          no public people directory.
+        </p>
+        <p class="supporting-line">
+          Requesting permission and sending require <span class="pro-badge">PRO</span>.
+          Signing in, approving, receiving, rejecting, and creating a local copy do not.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-languages" aria-labelledby="languages-title">
+      <div class="section-inner section-narrow">
+        <p class="eyebrow eyebrow-dark">Interface languages</p>
+        <h2 id="languages-title">DKReminder speaks your language — in 17 interface languages.</h2>
+        <p class="section-intro">
+          The app interface is available in the languages below. This does not mean
+          that every Google Play listing asset or this website is translated into
+          all 17 languages.
+        </p>
+        <ul class="language-list" aria-label="Supported app interface languages">
+          <li>Ukrainian</li>
+          <li>English</li>
+          <li>Bulgarian</li>
+          <li>Czech</li>
+          <li>German</li>
+          <li>Spanish</li>
+          <li>Estonian</li>
+          <li>French</li>
+          <li>Hungarian</li>
+          <li>Italian</li>
+          <li>Lithuanian</li>
+          <li>Latvian</li>
+          <li>Dutch</li>
+          <li>Polish</li>
+          <li>Brazilian Portuguese</li>
+          <li>Romanian</li>
+          <li>Slovak</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section section-privacy" aria-labelledby="privacy-title">
       <div class="section-inner privacy-band">
         <div>
           <p class="eyebrow eyebrow-dark">Privacy</p>
-          <h2 id="privacy-title">Your reminders are stored locally on your device.</h2>
+          <h2 id="privacy-title">Local by default, cloud only when you choose Exchange.</h2>
           <p>
-            DKReminder does not require an account, does not send reminders to
-            developer-operated servers, and does not include advertising or analytics SDKs.
-            Google Play handles the Pro subscription; reminder content is not sent
-            to Google Play Billing.
+            Local reminders stay on your device. An optional Exchange account uses
+            Firebase only for account operations and reminders you explicitly send.
+            Google Play handles the Pro subscription. DKReminder has no ads or
+            analytics SDKs.
           </p>
         </div>
-        <a class="text-button" href="privacy-en.html">Privacy Policy</a>
+        <div class="privacy-actions">
+          <a class="text-button" href="privacy-en.html">Privacy Policy</a>
+          <a class="text-button" href="delete-account-en.html">Delete account</a>
+        </div>
       </div>
     </section>
 
@@ -311,10 +388,10 @@
       <div class="section-inner final-callout">
         <img class="app-icon" src="assets/app-icon-192.png" alt="" width="86" height="86" />
         <div>
-          <h2 id="final-title">DKReminder is coming to Google Play.</h2>
+          <h2 id="final-title">DKReminder is moving through Google Play testing.</h2>
           <p>Add important things to your reminder system now — and return to them when they truly matter.</p>
         </div>
-        <span class="status-badge status-badge-dark">Coming soon to Google Play</span>
+        <span class="status-badge status-badge-dark">Closed testing</span>
       </div>
     </section>
   </main>

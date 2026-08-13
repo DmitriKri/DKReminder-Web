@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete your DKReminder Exchange account</title>
+  <meta name="description" content="How to request deletion of your optional DKReminder Exchange account and associated Firebase data." />
+  <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/delete-account-en.html" />
+  <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/delete-account-en.html" />
+  <link rel="alternate" hreflang="uk" href="https://dmitrikri.github.io/DKReminder-Web/delete-account.html" />
+  <link rel="alternate" hreflang="x-default" href="https://dmitrikri.github.io/DKReminder-Web/delete-account-en.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DKReminder" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:title" content="Delete your DKReminder Exchange account" />
+  <meta property="og:description" content="In-app steps and a public request method for deleting a DKReminder Exchange account." />
+  <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/delete-account-en.html" />
+  <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <p class="back">
+      <a class="brand-link" href="index.html">
+        <img src="assets/app-icon-192.png" alt="" width="28" height="28" />
+        <span>← DKReminder</span>
+      </a>
+    </p>
+
+    <h1>Delete your DKReminder Exchange account</h1>
+    <p class="muted">Developer: <strong>Kryzhanovskyi Dmytro Volodymyrovych</strong><br />Last updated: August 13, 2026</p>
+
+    <p class="policy-callout">
+      An Exchange account is optional. You do not need an account to create and use
+      local reminders in DKReminder.
+    </p>
+
+    <h2>Delete the account in the app</h2>
+    <ol>
+      <li>Open <strong>Settings</strong> in DKReminder.</li>
+      <li>Open <strong>Reminder exchange account</strong>.</li>
+      <li>Select <strong>Delete account</strong>.</li>
+      <li>Re-authenticate when requested.</li>
+      <li>Confirm <strong>Delete permanently</strong>.</li>
+    </ol>
+    <p>Account deletion is irreversible.</p>
+
+    <h2>Request deletion without using the app</h2>
+    <p>
+      Email
+      <a href="mailto:dkreminder.support@gmail.com?subject=DKReminder%20account%20deletion%20request">dkreminder.support@gmail.com</a>
+      from the same email address used for your Exchange account. State that you
+      want the account and its associated cloud data deleted, and include the
+      account email address.
+    </p>
+    <p>
+      Never send your password, Google credentials, verification codes, or payment
+      details. If you cannot access the account email address, explain that in the
+      request. We may ask for additional information needed to verify ownership
+      before processing deletion. Verified requests are handled without
+      unreasonable delay.
+    </p>
+
+    <h2>Data deleted with the account</h2>
+    <ul>
+      <li>Firebase Authentication account and sign-in identity;</li>
+      <li>Exchange profile and private email lookup;</li>
+      <li>registered devices, installation records, and push-notification tokens;</li>
+      <li>directional reminder-sending permissions and pending permission requests;</li>
+      <li>your own Exchange inbox and sent journal;</li>
+      <li>related delivery, idempotency, abuse-prevention, and account-deletion operation records.</li>
+    </ul>
+
+    <h2>Data that may remain</h2>
+    <ul>
+      <li>local reminders and other app data stored on your devices;</li>
+      <li>Android system backups or manual backup files that you control;</li>
+      <li>a reminder already delivered to another user’s inbox;</li>
+      <li>an independent local reminder another user created from a delivered item;</li>
+      <li>purchase and subscription records retained by Google Play under Google’s policies.</li>
+    </ul>
+    <p>
+      Another user controls their own inbox projection and any independent local
+      copy. Deleting your account does not remotely delete those records.
+    </p>
+
+    <h2>Google Play subscription</h2>
+    <p>
+      Deleting an Exchange account does not cancel DKReminder Pro. Manage or cancel
+      the subscription separately in
+      <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a>.
+    </p>
+
+    <h2>More information</h2>
+    <p>
+      See the <a href="privacy-en.html">DKReminder Privacy Policy</a> for details
+      about local data, Exchange, Firebase, backups, and retention.
+    </p>
+
+    <p class="muted"><a href="delete-account.html" lang="uk" hreflang="uk">Українська версія</a></p>
+    <footer class="muted">© 2026 DKReminder</footer>
+  </main>
+</body>
+</html>

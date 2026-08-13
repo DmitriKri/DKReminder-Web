@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DKReminder — застосунок-нагадувач для Android</title>
-  <meta name="description" content="DKReminder — застосунок-нагадувач для Android. Базові нагадування й повна форма доступні без підписки; Pro додає майстер, ручний цикл і сценарії." />
+  <meta name="description" content="DKReminder — local-first застосунок-нагадувач для Android із гнучкими повтореннями, 17 мовами інтерфейсу, необов’язковим обміном і Pro-автоматизаціями." />
   <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/index-uk.html" />
   <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/" />
   <link rel="alternate" hreflang="uk" href="https://dmitrikri.github.io/DKReminder-Web/index-uk.html" />
@@ -14,7 +14,7 @@
   <meta property="og:locale" content="uk_UA" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:title" content="DKReminder — застосунок-нагадувач для Android" />
-  <meta property="og:description" content="Базові нагадування без підписки та додаткові автоматизації й сценарії з DKReminder Pro." />
+  <meta property="og:description" content="Local-first нагадування, 17 мов інтерфейсу, необов’язковий обмін і розширені автоматизації DKReminder Pro." />
   <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/index-uk.html" />
   <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta property="og:image:alt" content="Емблема DKReminder з лампою та списком нагадувань на темному тлі" />
@@ -22,7 +22,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DKReminder — застосунок-нагадувач для Android" />
-  <meta name="twitter:description" content="Базові нагадування без підписки та додаткові автоматизації й сценарії з DKReminder Pro." />
+  <meta name="twitter:description" content="Local-first нагадування, 17 мов інтерфейсу, необов’язковий обмін і розширені автоматизації DKReminder Pro." />
   <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta name="twitter:image:alt" content="Емблема DKReminder з лампою та списком нагадувань на темному тлі" />
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -58,8 +58,8 @@
           деталі справ — щоб повертатися до них у потрібний момент.
         </p>
         <div class="hero-meta" aria-label="Статус застосунку">
-          <span class="status-badge">Скоро в Google Play</span>
-          <span>Без акаунта</span>
+          <span class="status-badge">Закрите тестування в Google Play</span>
+          <span>Для локальних нагадувань акаунт не потрібен</span>
           <span>Зберігаються локально</span>
         </div>
       </section>
@@ -126,12 +126,14 @@
         <ul class="pro-feature-grid" aria-label="Можливості DKReminder Pro">
           <li>Покрокове створення нагадувань</li>
           <li>Ручний денний цикл</li>
+          <li>Повторення від кінця місяця</li>
           <li>Графік від останнього виконання</li>
           <li>Власні повторні сигнали</li>
           <li>Власна кількість відтворень звуку</li>
           <li>Активний контроль пропущених</li>
           <li>Сценарій «Зустріч»</li>
           <li>Сценарій «Дедлайн»</li>
+          <li>Надсилання нагадувань підтвердженим отримувачам</li>
         </ul>
 
         <div class="pro-terms-grid">
@@ -281,19 +283,95 @@
       </div>
     </section>
 
+    <section class="section section-exchange" aria-labelledby="exchange-title">
+      <div class="section-inner">
+        <div class="section-heading section-narrow">
+          <p class="eyebrow eyebrow-dark">Обмін нагадуваннями</p>
+          <h2 id="exchange-title">Надішліть готове нагадування. Що робити далі — вирішує отримувач.</h2>
+          <p class="section-intro">
+            «Обмін» необов’язковий. Локальні нагадування й надалі працюють без
+            акаунта. Через «Обмін» DKReminder надсилає підготовлене вами
+            нагадування — це не спільне завдання й не чат.
+          </p>
+        </div>
+        <div class="exchange-grid">
+          <article class="exchange-card">
+            <span class="exchange-step" aria-hidden="true">1</span>
+            <h3>Спочатку дозвіл</h3>
+            <p>Дозвіл надсилати є одностороннім і має бути підтверджений отримувачем. Будь-хто з учасників може згодом його відкликати.</p>
+          </article>
+          <article class="exchange-card">
+            <span class="exchange-step" aria-hidden="true">2</span>
+            <h3>Незалежна копія</h3>
+            <p>Отримувач може відхилити запис або відкрити заповнений редактор, змінити будь-що й зберегти нове локальне нагадування.</p>
+          </article>
+          <article class="exchange-card">
+            <span class="exchange-step" aria-hidden="true">3</span>
+            <h3>Приватний результат</h3>
+            <p>Відправник не керує копією отримувача й не дізнається, чи її відкрили, імпортували, виконали або видалили.</p>
+          </article>
+        </div>
+        <p class="section-note">
+          Підготуйте нагадування один раз, а потім виберіть
+          <strong>Зберегти</strong>, <strong>Надіслати</strong> або
+          <strong>Зберегти й надіслати</strong>. Отримувач обирається за точною
+          підтвердженою електронною адресою «Обміну»; публічного каталогу людей у
+          DKReminder немає.
+        </p>
+        <p class="supporting-line">
+          Запит дозволу й надсилання потребують <span class="pro-badge">PRO</span>.
+          Вхід, підтвердження, отримання, відхилення та створення локальної копії — ні.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-languages" aria-labelledby="languages-title">
+      <div class="section-inner section-narrow">
+        <p class="eyebrow eyebrow-dark">Мови інтерфейсу</p>
+        <h2 id="languages-title">DKReminder доступний 17 мовами інтерфейсу.</h2>
+        <p class="section-intro">
+          Інтерфейс застосунку доступний переліченими нижче мовами. Це не означає,
+          що всі матеріали сторінки Google Play або цього сайту перекладено всіма
+          17 мовами.
+        </p>
+        <ul class="language-list" aria-label="Підтримувані мови інтерфейсу застосунку">
+          <li>Українська</li>
+          <li>Англійська</li>
+          <li>Болгарська</li>
+          <li>Чеська</li>
+          <li>Німецька</li>
+          <li>Іспанська</li>
+          <li>Естонська</li>
+          <li>Французька</li>
+          <li>Угорська</li>
+          <li>Італійська</li>
+          <li>Литовська</li>
+          <li>Латиська</li>
+          <li>Нідерландська</li>
+          <li>Польська</li>
+          <li>Португальська (Бразилія)</li>
+          <li>Румунська</li>
+          <li>Словацька</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section section-privacy" aria-labelledby="privacy-title">
       <div class="section-inner privacy-band">
         <div>
           <p class="eyebrow eyebrow-dark">Приватність</p>
-          <h2 id="privacy-title">Ваші нагадування зберігаються локально на вашому пристрої.</h2>
+          <h2 id="privacy-title">Локально за замовчуванням, хмара — лише коли ви обираєте «Обмін».</h2>
           <p>
-            DKReminder не потребує акаунта, не надсилає ваші нагадування на
-            сервери розробника та не використовує рекламні або аналітичні SDK.
-            Підписку Pro обробляє Google Play; вміст нагадувань не передається
-            Google Play Billing.
+            Локальні нагадування залишаються на пристрої. Необов’язковий акаунт
+            «Обміну» використовує Firebase лише для роботи акаунта й нагадувань,
+            які ви явно надсилаєте. Підписку Pro обробляє Google Play. У DKReminder
+            немає реклами й аналітичних SDK.
           </p>
         </div>
-        <a class="text-button" href="privacy.html">Політика конфіденційності</a>
+        <div class="privacy-actions">
+          <a class="text-button" href="privacy.html">Політика конфіденційності</a>
+          <a class="text-button" href="delete-account.html">Видалити акаунт</a>
+        </div>
       </div>
     </section>
 
@@ -301,10 +379,10 @@
       <div class="section-inner final-callout">
         <img class="app-icon" src="assets/app-icon-192.png" alt="" width="86" height="86" />
         <div>
-          <h2 id="final-title">DKReminder готується до Google Play.</h2>
+          <h2 id="final-title">DKReminder проходить тестування в Google Play.</h2>
           <p>Додайте важливе в систему нагадувань уже зараз — і повертайтеся до нього тоді, коли це справді потрібно.</p>
         </div>
-        <span class="status-badge status-badge-dark">Скоро в Google Play</span>
+        <span class="status-badge status-badge-dark">Закрите тестування</span>
       </div>
     </section>
   </main>

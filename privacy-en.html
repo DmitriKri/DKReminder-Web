@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — DKReminder</title>
-  <meta name="description" content="DKReminder Privacy Policy: locally stored reminder data, Android backup, and technical subscription data handled through Google Play Billing." />
+  <meta name="description" content="DKReminder Privacy Policy: local reminders, optional Firebase account and reminder exchange, backups, account deletion, and Google Play Billing." />
   <link rel="canonical" href="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <link rel="alternate" hreflang="en" href="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <link rel="alternate" hreflang="uk" href="https://dmitrikri.github.io/DKReminder-Web/privacy.html" />
@@ -14,13 +14,13 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="uk_UA" />
   <meta property="og:title" content="Privacy Policy — DKReminder" />
-  <meta property="og:description" content="How DKReminder stores data locally and uses Android backup and Google Play Billing." />
+  <meta property="og:description" content="How DKReminder handles local reminders, optional reminder exchange, backups, account deletion, and Google Play Billing." />
   <meta property="og:url" content="https://dmitrikri.github.io/DKReminder-Web/privacy-en.html" />
   <meta property="og:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta property="og:image:alt" content="DKReminder emblem with a lamp and reminder checklist on a dark background" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy — DKReminder" />
-  <meta name="twitter:description" content="How DKReminder stores data locally and uses Android backup and Google Play Billing." />
+  <meta name="twitter:description" content="How DKReminder handles local reminders, optional reminder exchange, backups, account deletion, and Google Play Billing." />
   <meta name="twitter:image" content="https://dmitrikri.github.io/DKReminder-Web/assets/og-cover.png" />
   <meta name="twitter:image:alt" content="DKReminder emblem on a dark background" />
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -40,77 +40,125 @@
     </p>
 
     <h1>Privacy Policy</h1>
-    <p class="muted">App: <strong>DKReminder</strong><br />Last updated: July 29, 2026</p>
+    <p class="muted">App: <strong>DKReminder</strong><br />Last updated: August 13, 2026</p>
 
     <h2>In brief</h2>
     <p>
-      DKReminder is a reminder app that primarily works locally on your device.
-      We do not provide user accounts or operate a DKReminder cloud service, and
-      we do not sell personal data. The app does not include advertising or
-      analytics SDKs.
+      DKReminder is a local-first reminder app. You can create and use local
+      reminders without an account. An optional Exchange account uses Google
+      Firebase so that users can request permission and send selected reminders
+      to one another. We do not sell personal data, and the app does not include
+      advertising or analytics SDKs.
     </p>
 
-    <h2>Data processed by the app</h2>
+    <h2>Data stored locally</h2>
     <p>
       Reminders, reminder settings, trigger history, and details you add to
       scenarios such as meetings and deadlines are stored in the app’s internal
       database on your device.
     </p>
     <p>
-      When you choose a participant through Android’s system contact picker,
-      DKReminder reads only the display name of the contact you selected and adds
-      it to the meeting details. The app does not request unrestricted access to
-      your address book.
+      You control this local data and can use the core reminder functions without
+      signing in. Except for data that you explicitly send through Exchange, local
+      reminder content is not uploaded to the DKReminder cloud service.
     </p>
 
-    <h2>Health-related reminders</h2>
+    <h2>Optional Exchange account</h2>
     <p>
-      If you use DKReminder for health-related reminders, their text may contain
-      information you add about medication, symptoms, well-being, or visits to
-      healthcare professionals. DKReminder processes this as ordinary reminder
-      content: it is stored in the app’s local database on your device and is not
-      sent to developer-operated servers. Under the terms described below, this
-      information may be included in an Android system backup, transferred to
-      another device, or included in a manual backup file that you create.
+      Exchange requires an optional account created with an email address and
+      password or with Google Sign-In. Firebase processes account details such as
+      your display name, email address, user ID, sign-in provider, verification
+      state, and technical authentication records. DKReminder also stores a private
+      email lookup used to find the intended user, installation and push-notification
+      identifiers, app and exchange-protocol versions, and records needed for abuse
+      prevention and reliable delivery.
     </p>
     <p>
-      DKReminder is a reminder tool, not a medical device. It does not diagnose,
-      treat, cure, or prevent any medical condition. Consult a qualified
-      healthcare professional for medical advice, diagnosis, or treatment.
+      A permission to send reminders is directional and must be approved by the
+      recipient. Requesting permission and sending new reminders require Pro.
+      Signing in, approving or revoking permissions, receiving a reminder, and
+      creating a local copy from it do not require Pro.
     </p>
 
-    <h2>Data transmission and third-party services</h2>
+    <h2>Reminder exchange</h2>
     <p>
-      DKReminder does not send your reminder data to developer-operated servers.
-      The app does not use advertising networks, analytics services, or third-party
-      SDKs that collect reminder content or usage statistics.
+      When you explicitly choose to send a reminder, Firebase stores the complete
+      reminder snapshot needed for the recipient to review it: title, description,
+      schedule, priority, alert behavior, recurrence settings, and any meeting or
+      deadline details you included. The sender and recipient also keep separate
+      journal entries with delivery status and timestamps. These journals are not
+      a shared reminder and are not synchronized with one another.
     </p>
+    <p>
+      The recipient may reject the incoming item or open a prefilled editor and
+      save an independent local reminder. After sending, the sender cannot control
+      the recipient’s copy and does not learn whether the recipient opened,
+      rejected, imported, changed, completed, or deleted it. Deleting a sent or
+      received journal entry affects only that user’s own journal.
+    </p>
+    <p>
+      Push notifications do not contain the reminder title, description, or
+      schedule. They contain technical identifiers needed to fetch the item and may
+      include the sender’s display name. Firebase Cloud Messaging is a delivery
+      signal, not the source of truth for the reminder.
+    </p>
+
+    <h2>Selected contacts and sensitive text</h2>
+    <p>
+      When you choose a meeting participant through Android’s system contact
+      picker, DKReminder reads only the display name of the contact you selected.
+      The app does not request unrestricted access to your address book. If you
+      then send that reminder through Exchange, the selected display name is sent
+      as part of the meeting details.
+    </p>
+    <p>
+      Reminder text is user-provided and may contain private or health-related
+      information, for example a medication name or medical appointment. DKReminder
+      treats it as ordinary reminder content and uploads it only when you explicitly
+      send that reminder. DKReminder is not a medical device and does not provide
+      diagnosis or treatment advice.
+    </p>
+
+    <h2>Firebase and other Google services</h2>
+    <p>
+      DKReminder uses Firebase Authentication, Cloud Firestore, Cloud Functions,
+      Cloud Messaging, Firebase Installations, and App Check with Play Integrity.
+      Google may process device or app identifiers, IP address, user-agent and
+      integrity information as needed to provide, secure, and protect these
+      services. Data is encrypted in transit and protected at rest by the service
+      provider, but Exchange is not end-to-end encrypted.
+    </p>
+    <p>
+      Firebase acts as a service provider for DKReminder. Google’s handling of data
+      is also governed by the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+      <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security documentation</a>.
+      DKReminder does not use advertising networks, analytics SDKs, or Crashlytics.
+    </p>
+
+    <h2>Google Play Billing</h2>
     <p>
       DKReminder uses Google Play Billing to offer and verify the annual DKReminder
       Pro subscription. Google Play may process Google Account, purchase, and
-      payment information under the
-      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
-      DKReminder does not receive your payment card details.
-    </p>
-    <p>
-      The app receives only the technical product, purchase, and status information
-      needed to provide Pro access and stores minimal access state locally.
-      DKReminder does not operate a billing backend or user accounts. Reminder
-      content is not sent to Google Play Billing.
+      payment information. The app receives technical product, purchase token, and
+      purchase-status information needed to provide Pro access. DKReminder does not
+      receive payment card details, and reminder content is not sent to Google Play
+      Billing.
     </p>
 
     <h2>Android backup and device transfer</h2>
     <p>
       Depending on your Android and Google Account backup settings, Android may
       include allowed DKReminder data in a system backup or transfer it directly to
-      another device. This includes the reminder database, onboarding state, and the
-      initial Pro access start date. These operations are performed by Android’s
-      backup and device-transfer services, not by a DKReminder server.
+      another device. This can include local reminders, their metadata and history,
+      onboarding state, and the initial Pro access start date. These operations are
+      performed by Android’s backup and device-transfer services, not by the
+      DKReminder Exchange service.
     </p>
     <p>
-      Paid subscription confirmation, the local billing cache, and debug testing
-      settings are excluded from Android backup. You can manage system backup
-      settings on your device.
+      Paid subscription confirmation, the local billing cache, account credentials,
+      cloud authentication tokens, and debug testing settings are excluded from
+      Android backup. You can manage system backup settings on your device.
     </p>
 
     <h2>Manual backup and restore</h2>
@@ -120,7 +168,8 @@
       sharing, and deleting that file. When you import a backup, its data replaces
       the current data in the app. The file includes the initial Pro access start
       date so that restoring it does not create a new 30-day period, but it does not
-      contain paid subscription status, the billing cache, or payment information.
+      contain paid subscription status, the billing cache, account credentials,
+      cloud authentication tokens, or payment information.
     </p>
 
     <h2>Permissions and their purpose</h2>
@@ -131,20 +180,41 @@
       <li><strong>Run after device restart</strong> — to restore scheduled reminders after the device restarts.</li>
       <li><strong>Foreground media playback</strong> — to play the selected reminder sound reliably while an alert is active.</li>
     </ul>
-    <p>These permissions are not used to collect personal data.</p>
+    <p>
+      Exchange also uses internet access and push notifications for account and
+      delivery operations. The system contact picker grants access only to the
+      contact the user explicitly selects; DKReminder does not request broad contact
+      permission.
+    </p>
 
     <h2>Storage and deletion</h2>
     <p>
-      You can delete reminders and their associated details in the app. Uninstalling
-      DKReminder removes its local data from the device. A system backup or a manual
-      backup file may remain until you delete or replace it in the relevant Android,
-      Google Account, or storage settings.
+      You can delete local reminders and journal entries in the app. Cloud Exchange
+      records do not have a fixed automatic expiration in the current version and
+      remain until you delete the relevant entry or delete your Exchange account,
+      subject to the independent-copy rule below.
+    </p>
+    <p>
+      To delete your Exchange account in the app, open <strong>Settings → Reminder
+      exchange account → Delete account</strong>, re-authenticate, and confirm
+      permanent deletion. This removes your Firebase Authentication account,
+      profile and private email index, registered devices and push tokens,
+      permissions, your own sent and inbox journals, and related backend operation
+      records. A public request method and full details are available on the
+      <a href="delete-account-en.html">Account deletion page</a>.
+    </p>
+    <p>
+      A reminder already delivered to another user’s inbox, or an independent local
+      reminder that another user created from it, is controlled by that user and is
+      not removed when you delete your account. Local data on your device, Android
+      system backups, and manual backup files must be deleted separately. Deleting
+      an Exchange account does not cancel a Google Play subscription.
     </p>
 
     <h2>Children’s privacy</h2>
     <p>
-      DKReminder is not designed to collect personal data from children and does
-      not knowingly collect personal data through developer-operated servers.
+      DKReminder is intended for users aged 18 and over. The service is not directed
+      to children, and we do not knowingly collect children’s personal data.
     </p>
 
     <h2>Changes to this policy</h2>
@@ -155,7 +225,9 @@
 
     <h2>Contact</h2>
     <p>
-      Privacy questions: <a href="mailto:dkreminder.support@gmail.com">dkreminder.support@gmail.com</a>
+      Developer: <strong>Kryzhanovskyi Dmytro Volodymyrovych</strong><br />
+      Privacy questions: <a href="mailto:dkreminder.support@gmail.com">dkreminder.support@gmail.com</a><br />
+      Account deletion: <a href="delete-account-en.html">instructions and request method</a>
     </p>
 
     <p class="muted"><a href="privacy.html" lang="uk" hreflang="uk">Українська версія</a></p>

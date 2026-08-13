@@ -75,8 +75,18 @@ h3 {
 .back { margin-bottom: 24px; }
 
 .container ul { padding-left: 1.2rem; }
+.container ol { padding-left: 1.35rem; }
 .container li { margin: 4px 0; }
 .container footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+
+.policy-callout {
+  margin: 24px 0 30px;
+  padding: 18px 20px;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 12px 12px 0;
+  background: var(--blue-soft);
+  color: #35425d;
+}
 
 /* Landing page */
 
@@ -542,6 +552,64 @@ h3 {
   justify-self: end;
 }
 
+.section-exchange { background: var(--surface); }
+
+.exchange-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.exchange-card {
+  position: relative;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface-soft);
+}
+
+.exchange-step {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pro);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.exchange-card h3 {
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
+.exchange-card p { margin-bottom: 0; }
+
+.section-languages { background: var(--surface-soft); }
+
+.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.language-list li {
+  margin: 0;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .section-privacy { background: var(--surface); }
 
 .privacy-band {
@@ -557,6 +625,13 @@ h3 {
 
 .privacy-band h2 { max-width: 680px; font-size: clamp(1.8rem, 3vw, 2.6rem); }
 .privacy-band p { max-width: 680px; margin-bottom: 0; }
+
+.privacy-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .text-button {
   flex: 0 0 auto;
@@ -636,7 +711,9 @@ h3 {
   .scenario-card-reverse .scenario-copy { order: initial; }
   .scenario-screen,
   .scenario-card-reverse .scenario-screen { justify-self: center; }
+  .exchange-grid { grid-template-columns: 1fr; }
   .privacy-band { align-items: flex-start; flex-direction: column; }
+  .privacy-actions { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
   .pro-terms-grid { grid-template-columns: 1fr; }
   .final-callout { grid-template-columns: auto minmax(0, 1fr); }
   .final-callout .status-badge { grid-column: 2; justify-self: start; }
@@ -664,6 +741,7 @@ h3 {
   .section h2 { font-size: 2.05rem; }
   .timeline-grid { grid-template-columns: 1fr; }
   .timeline-card { padding: 22px; }
+  .exchange-card { padding: 24px; }
   .scenario-card { padding: 26px; }
   .privacy-band { padding: 26px; }
   .final-callout { grid-template-columns: 1fr; }
