@@ -226,6 +226,17 @@ h3 {
   white-space: nowrap;
 }
 
+.status-badge-link:hover {
+  border-color: #8da9dc;
+  background: #2b3544;
+  text-decoration: none;
+}
+
+.status-badge-link:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
 .hero-emblem {
   display: grid;
   place-items: center;
@@ -670,6 +681,7 @@ h3 {
 .final-callout h2 { margin-bottom: 8px; color: #f5f7fb; font-size: clamp(1.7rem, 3vw, 2.5rem); }
 .final-callout p { margin-bottom: 0; color: #cbd1dc; }
 .status-badge-dark { background: var(--surface-dark-soft); }
+.status-badge-dark.status-badge-link:hover { background: #313b4a; }
 
 .site-footer {
   padding: 24px 0 34px;
