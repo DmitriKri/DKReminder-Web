@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creating reminders and recurrence in DKReminder</title>
+  <meta name="description" content="Create one-time and recurring DKReminder schedules, choose an active window, calendar rules, schedule anchors, and a manual daily cycle." />
+  <link rel="canonical" href="https://reminder.dvkworks.com/help/creating-reminders.html" />
+  <link rel="alternate" hreflang="en" href="https://reminder.dvkworks.com/help/creating-reminders.html" />
+  <link rel="alternate" hreflang="uk" href="https://reminder.dvkworks.com/help/creating-reminders-uk.html" />
+  <link rel="alternate" hreflang="x-default" href="https://reminder.dvkworks.com/help/creating-reminders.html" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="help.js" defer></script>
+</head>
+<body class="help-page">
+  <header class="help-site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand-link brand-link-light" href="../index.html" aria-label="DKReminder home page"><img src="../assets/app-icon-192.png" alt="" width="38" height="38" /><span>DKReminder</span></a><div class="nav-actions"><div class="language-switch" aria-label="Page language"><a class="language-link" href="creating-reminders-uk.html" data-preserve-hash lang="uk" hreflang="uk">UA</a><a class="language-link is-active" href="creating-reminders.html" lang="en" hreflang="en" aria-current="page">EN</a></div></div></nav></header>
+  <main class="help-main">
+    <details class="help-mobile-bar"><summary>All sections</summary><nav class="help-section-nav" aria-label="Help sections"><ul><li><a href="overview.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="creating-reminders.html" aria-current="page">Creating and recurrence</a></li><li><a href="signals-actions.html">Alerts and actions</a></li><li><a href="checklists.html">Checklists</a></li><li><a href="exchange.html">Exchange</a></li><li><a href="settings-data-pro.html">Settings, data, and Pro</a></li></ul></nav></details>
+    <div class="help-shell">
+      <aside class="help-sidebar"><p class="help-sidebar-title">Help sections</p><nav class="help-section-nav" aria-label="Help sections"><ul><li><a href="overview.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="creating-reminders.html" aria-current="page">Creating and recurrence</a></li><li><a href="signals-actions.html">Alerts and actions</a></li><li><a href="checklists.html">Checklists</a></li><li><a href="exchange.html">Exchange</a></li><li><a href="settings-data-pro.html">Settings, data, and Pro</a></li></ul></nav></aside>
+      <article class="help-article">
+        <nav class="help-breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Help Center</a><span>Creating and recurrence</span></nav>
+        <p class="help-kicker">Creating and recurrence</p>
+        <h1>Create one rule, then let it produce the right alerts.</h1>
+        <p class="help-lead">A reminder keeps the title, schedule, and settings. An alert is one concrete notification DKReminder shows at a scheduled time. Changing one alert is not the same as changing the whole reminder rule.</p>
+
+        <nav class="help-on-this-page" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#ways-to-create">Ways to create</a></li><li><a href="#guided-scenarios">Meeting and deadline</a></li><li><a href="#once">One-time reminders</a></li><li><a href="#intervals">Minute, hour, and day intervals</a></li><li><a href="#calendar">Daily through yearly</a></li><li><a href="#schedule-anchor">Schedule anchor</a></li><li><a href="#manual-cycle">Manual daily cycle</a></li><li><a href="#active-window">Active window</a></li><li><a href="#end-conditions">End conditions and checks</a></li></ul></nav>
+
+        <h2 id="ways-to-create">Choose how to start</h2>
+        <details class="help-inline-disclosure"><summary><span class="help-context-trigger">Choose <strong>+</strong> to create a reminder <span class="help-context-question" aria-hidden="true">?</span></span></summary><figure class="help-media"><div class="help-screenshot-viewport"><img src="../assets/screenshots/help/en/reminders-add-location.png" alt="The DKReminder Reminders screen with the Add reminder button highlighted in the top-right corner" width="1080" height="2400" loading="lazy" /><span class="help-screenshot-hotspot" aria-hidden="true"></span></div><figcaption>On the <strong>Reminders</strong> screen, the <strong>+</strong> button is in the top-right corner.</figcaption></figure></details>
+        <p>Depending on your saved preference and Pro access, DKReminder opens either the full editor or step-by-step creation. Both save the same reminder fields.</p>
+        <div class="help-example-grid"><div class="help-example"><strong>Ready-made option</strong><p>Best when a catalog entry already matches the task. Open it, then review the title, time, and schedule before saving.</p></div><div class="help-example"><strong>Step-by-step creation · Pro</strong><p>Best when you want to see only the fields relevant to the current schedule.</p></div><div class="help-example"><strong>Full editor</strong><p>Best when you know the exact recurrence type and want every relevant setting on one form.</p></div><div class="help-example"><strong>Five-minute quick action</strong><p>During first-run setup, creates a one-time draft for five minutes from the current time and shows the actual selected time before save.</p></div></div>
+        <section class="help-screen-tour help-editor-tour" data-help-screen-tour aria-labelledby="editor-tour-title">
+          <div class="help-screen-tour-heading">
+            <p class="help-kicker">One continuous form</p>
+            <h3 id="editor-tour-title">Walk through the full editor</h3>
+            <p>The example below creates a weekly Saturday reminder for preparing a weekend hike. Choose a step to follow the fields in the same order in which they appear in the editor.</p>
+          </div>
+          <div class="help-screen-tour-tabs" role="tablist" aria-label="Full editor steps">
+            <button id="editor-tour-tab-1" type="button" role="tab" aria-selected="true" aria-controls="editor-tour-panel-1" tabindex="0">1 · Main details</button>
+            <button id="editor-tour-tab-2" type="button" role="tab" aria-selected="false" aria-controls="editor-tour-panel-2" tabindex="-1">2 · Timing</button>
+            <button id="editor-tour-tab-3" type="button" role="tab" aria-selected="false" aria-controls="editor-tour-panel-3" tabindex="-1">3 · Alert behavior</button>
+            <button id="editor-tour-tab-4" type="button" role="tab" aria-selected="false" aria-controls="editor-tour-panel-4" tabindex="-1">4 · Review and save</button>
+          </div>
+          <div class="help-screen-tour-panels">
+            <figure id="editor-tour-panel-1" class="help-editor-tour-panel" role="tabpanel" aria-labelledby="editor-tour-tab-1">
+              <div class="help-editor-shot"><img src="../assets/screenshots/help/en/creation/full-editor-01.png" alt="Full editor showing the reminder title, description, two checklists, importance, and weekly recurrence" width="1080" height="2400" loading="lazy" /></div>
+              <figcaption>
+                <h4>Describe the reminder and set its rhythm</h4>
+                <ul>
+                  <li><strong>Title and description</strong> explain what to do and add any context you will need when the alert appears.</li>
+                  <li><strong><a href="checklists.html#create-list">Lists</a></strong> keep related items checkable. The first list is available to everyone; creating additional lists is a <a href="checklists.html#multiple-lists">Pro feature</a>.</li>
+                  <li><strong>Importance</strong> can also decide the alert mode when <em>Based on importance</em> is selected later.</li>
+                  <li><strong><a href="#calendar">Recurrence type</a></strong> defines the schedule. Here, <em>Weekly</em> and <em>Saturday</em> mean one alert every Saturday.</li>
+                </ul>
+              </figcaption>
+            </figure>
+            <figure id="editor-tour-panel-2" class="help-editor-tour-panel" role="tabpanel" aria-labelledby="editor-tour-tab-2" hidden>
+              <div class="help-editor-shot"><img src="../assets/screenshots/help/en/creation/full-editor-02.png" alt="Full editor showing trigger time, schedule boundary, active window, end condition, and alert mode" width="1080" height="2400" loading="lazy" /></div>
+              <figcaption>
+                <h4>Choose when and how the schedule may run</h4>
+                <ul>
+                  <li><strong>Trigger time</strong> is the time of day for each scheduled alert.</li>
+                  <li><strong>Do not start before</strong> sets the earliest allowed date and time for the schedule.</li>
+                  <li><strong>Active window</strong> can keep frequent reminders inside part of the day. <a href="#active-window">Learn how the window works.</a></li>
+                  <li><strong><a href="#end-conditions">End condition</a></strong> can leave the rule open-ended, stop it on a date, or stop it after a number of occurrences.</li>
+                  <li><strong>Alert mode</strong> chooses notifications, full-screen alerts, or behavior based on importance. <a href="getting-started.html#full-screen">Full-screen access is controlled by Android.</a></li>
+                </ul>
+              </figcaption>
+            </figure>
+            <figure id="editor-tour-panel-3" class="help-editor-tour-panel" role="tabpanel" aria-labelledby="editor-tour-tab-3" hidden>
+              <div class="help-editor-shot"><img src="../assets/screenshots/help/en/creation/full-editor-03.png" alt="Full editor showing repeat alerts, sound options, playback count, and the beginning of the upcoming trigger preview" width="1080" height="2400" loading="lazy" /></div>
+              <figcaption>
+                <h4>Decide how an unanswered alert behaves</h4>
+                <ul>
+                  <li><strong>Repeat alerts without a response</strong> can use the app-wide setting, stay off, or use a custom Pro rule. These are later alerts, not repeated sound playback. <a href="signals-actions.html#repeat-missed">Read about repeated alerts.</a></li>
+                  <li><strong>Sound</strong> can follow the global setting or use a reminder-specific choice.</li>
+                  <li><strong>Notify about missed reminders</strong> is an optional Pro notification after a missed alert.</li>
+                  <li><strong>Sound playback count</strong> controls consecutive playback during one regular alert.</li>
+                  <li><strong>Upcoming triggers</strong> lets you verify the next calculated dates before saving.</li>
+                </ul>
+              </figcaption>
+            </figure>
+            <figure id="editor-tour-panel-4" class="help-editor-tour-panel" role="tabpanel" aria-labelledby="editor-tour-tab-4" hidden>
+              <div class="help-editor-shot"><img src="../assets/screenshots/help/en/creation/full-editor-04.png" alt="Bottom of the full editor showing upcoming triggers, save or send choices, and the Save button" width="1080" height="2400" loading="lazy" /></div>
+              <figcaption>
+                <h4>Review the result, then save</h4>
+                <ul>
+                  <li>Check <strong>Upcoming triggers</strong> one last time. If the dates are wrong, return to the schedule fields instead of saving.</li>
+                  <li><strong>Save for myself</strong> creates the reminder on this device.</li>
+                  <li><strong>Send only</strong> and <strong>Send and save for myself</strong> are Pro Exchange actions. They become usable after the recipient gives you sending permission. <a href="exchange.html#send">Learn about sending reminders.</a></li>
+                  <li><strong>Save</strong> applies the selected outcome. Nothing is created until you press it.</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <h3>Start from a ready-made option</h3>
+        <p>The catalog is a shortcut into the same editor, not a separate reminder type. Choose a close match, then review its title, time, and schedule.</p>
+        <figure class="help-media help-media-portrait"><img src="../assets/screenshots/source/01-preset-catalog-en.png" alt="DKReminder creation screen with ready-made reminder options" width="1080" height="2400" loading="lazy" /><figcaption>Ready-made options are starting points. Review the schedule before saving.</figcaption></figure>
+
+        <h2 id="guided-scenarios">Use the Meeting or Deadline scenario · Pro</h2>
+        <p>These guided scenarios collect structured context before opening the regular reminder review. Meeting keeps participants, format, place or online platform, and preparation notes. Deadline keeps the due date, reminder cadence, destination or reference, and preparation notes.</p>
+        <div class="help-media-sequence">
+          <figure class="help-media"><img src="../assets/screenshots/source/03-meeting-online-Part-1-en.png" alt="Meeting scenario with topic, participants, online format, and platform" width="1080" height="2400" loading="lazy" /><figcaption>Start with the meeting purpose, participants, and format.</figcaption></figure>
+          <figure class="help-media"><img src="../assets/screenshots/source/03-meeting-online-Part-2-en.png" alt="Meeting scenario fields for agenda, preparation, items to bring, and notes" width="1080" height="2400" loading="lazy" /><figcaption>Add preparation details that should remain with the reminder.</figcaption></figure>
+          <figure class="help-media"><img src="../assets/screenshots/source/04-deadline-Part-1-en.png" alt="Deadline scenario with category, task, due date, and reminder cadence" width="1080" height="2400" loading="lazy" /><figcaption>Choose the deadline and when advance reminders should begin.</figcaption></figure>
+          <figure class="help-media"><img src="../assets/screenshots/source/04-deadline-Part-2-en.png" alt="Deadline scenario fields for destination, reference, preparation, and notes" width="1080" height="2400" loading="lazy" /><figcaption>Keep the destination and supporting details with the deadline.</figcaption></figure>
+        </div>
+        <div class="help-note"><strong>After the scenario:</strong> review the generated title, schedule, and alert settings before saving. Without Pro, existing structured details remain visible and the ordinary reminder fields remain editable.</div>
+
+        <h2 id="once">One-time reminders</h2>
+        <p>Choose <strong>Once</strong> for a task that should alert at one specific date and time, such as calling a service desk tomorrow at 10:00.</p>
+        <ol><li>Select <strong>Once</strong>.</li><li>Choose the date and time.</li><li>Set importance and how the reminder should appear.</li><li>Save and verify the scheduled time.</li></ol>
+        <div class="help-result"><strong>Expected result:</strong> DKReminder creates one scheduled alert. After that alert is resolved, the one-time reminder can move to completed reminders.</div>
+
+        <h2 id="intervals">Every N minutes, hours, or days</h2>
+        <p>Use interval recurrence when the distance between alerts matters more than the calendar label.</p>
+        <div class="help-example-grid"><div class="help-example"><strong>Every 20 minutes</strong><p>Useful for a short repeated routine inside an active window.</p></div><div class="help-example"><strong>Every 3 hours</strong><p>Creates scheduled points at the chosen interval. Snoozing one alert does not move the main schedule.</p></div><div class="help-example"><strong>Every 2 days</strong><p>Counts fixed day intervals from the first trigger.</p></div><div class="help-example"><strong>Every 28 days</strong><p>Still means a 28-day interval. It is not the same as monthly recurrence.</p></div></div>
+        <ol><li>Choose <strong>Every N minutes</strong>, <strong>Every N hours</strong>, or <strong>Every N days</strong>.</li><li>Enter the interval and the <strong>First trigger</strong>.</li><li>Optionally set an active window and an end condition.</li><li>Choose whether the next alert is anchored <strong>By schedule</strong> or, with Pro, <strong>From response time</strong>.</li></ol>
+
+        <h2 id="calendar">Daily, weekly, monthly, and yearly schedules</h2>
+        <h3>Daily and weekly</h3>
+        <p><strong>Daily</strong> runs at one or more selected times each calendar day. <strong>Weekly</strong> runs on selected weekdays at the chosen time. <strong>Every N weeks</strong> adds an interval between eligible weeks: the week containing the recurrence-start date sets the phase, and alerts happen on the selected weekdays at that time.</p>
+        <h3>Monthly</h3>
+        <p>Monthly scheduling follows calendar months, not a fixed number of days. Choose a specific day of the month, or use the Pro option that counts back from the actual month end.</p>
+        <ul><li>For a specific day such as the 31st, choose what happens in a shorter month: use its last day, use the first day of the next month, or skip the month.</li><li><strong>From the end of the month · Pro</strong> supports the last day or 1–27 days before month end. The date is recalculated for each real calendar month.</li></ul>
+        <h3>Yearly</h3>
+        <p>Yearly recurrence uses a calendar month and date. If you select February 29, choose the explicit non-leap-year rule: February 28, March 1, or leap years only.</p>
+        <div class="help-note"><strong>Schedule boundary:</strong> for Daily, Weekly, Monthly, and Yearly, <strong>Do not start before</strong> is the earliest allowed boundary. The actual alert time comes from the schedule fields.</div>
+
+        <h2 id="schedule-anchor">By schedule or from response time</h2>
+        <p>This choice is available for the Every N minutes, hours, and days interval types.</p>
+        <div class="help-example-grid"><div class="help-example"><strong>By schedule</strong><p>An alert is planned for 10:00 and the interval is two hours. Even if you respond at 10:37, the next scheduled point remains 12:00.</p></div><div class="help-example"><strong>From response time · Pro</strong><p>You respond at 10:37, so the next alert is planned for 12:37. DKReminder waits for the response before advancing this chain.</p></div></div>
+        <div class="help-warning"><strong>Snooze is different.</strong> Snoozing moves the next signal for the current alert only. It does not change the reminder's recurrence schedule or create a new alert.</div>
+
+        <h2 id="manual-cycle">Manual daily cycle · Pro</h2>
+        <p>Use a manual daily cycle when the day's start changes and you want later alerts to follow that real start. The cycle never starts automatically.</p>
+        <ol><li>Choose <strong>Manual daily cycle</strong>.</li><li>Set the interval and inclusive active-window boundaries.</li><li>Optionally enable a helper reminder that asks you to start the cycle.</li><li>If the course is limited, set how many manual day starts it includes.</li><li>On each day, open the reminder and choose <strong>Start</strong> when you are ready.</li></ol>
+        <p>Example: start at 09:30 with a two-hour interval and an active window ending at 18:00. DKReminder plans 11:30, 13:30, 15:30, and 17:30. It does not add a 19:30 alert.</p>
+        <div class="help-media-sequence"><figure class="help-media"><img src="../assets/screenshots/source/02-manual-cycle-Part-1-en.png" alt="Manual daily cycle settings with interval, active window, and start reminder" width="1080" height="2400" loading="lazy" /><figcaption>Set the interval, active window, and optional start reminder.</figcaption></figure><figure class="help-media"><img src="../assets/screenshots/source/02-manual-cycle-Part-2-en.png" alt="Manual daily cycle settings with course limit and alert options" width="1080" height="2400" loading="lazy" /><figcaption>Continue to the course limit and ordinary alert settings.</figcaption></figure></div>
+        <div class="help-note"><strong>Course count:</strong> a ten-start course means ten manual daily starts, not ten alerts inside all cycles.</div>
+
+        <h2 id="active-window">Active window and calendar exceptions</h2>
+        <p>The <strong>Active window</strong> limits when new scheduled alerts may be created. Its boundaries are inclusive, and it can cross midnight, such as 22:00–06:00.</p>
+        <ul><li>A planned point outside the window is not simply moved to the window start; DKReminder finds the next valid scheduled point.</li><li>For minute/hour intervals and a manual cycle, an invalid first calculated alert blocks saving or starting until you change the time or window.</li><li>An alert that already exists may be snoozed beyond the active window because snooze acts on that alert, not on the main schedule.</li><li>Short-month and February 29 policies appear only for the calendar edge case that needs them.</li></ul>
+
+        <h2 id="end-conditions">End conditions, expected result, and common checks</h2>
+        <p>Repeating schedules can continue until you stop them, end after a number of scheduled alerts, or stop at a date. A manual daily cycle uses a course limit instead of the generic end condition, and a one-time reminder needs none.</p>
+        <div class="help-result"><strong>Expected result:</strong> after save, the reminder summary and future preview match the recurrence type, first trigger or schedule boundary, active window, and end rule you selected.</div>
+        <h3>If the schedule looks wrong</h3>
+        <ol><li>Check whether you selected an interval type or a calendar type. Every 28 days is not monthly.</li><li>Check the meaning of the start field: First trigger, Recurrence start, or Do not start before.</li><li>For Every N weeks, verify the week that establishes the interval and the selected weekdays.</li><li>For a 29th, 30th, 31st, or February 29 schedule, review the calendar exception.</li><li>Check whether the active window excludes the expected point.</li><li>For From response time, remember that the next alert is calculated only after you respond to the current one.</li></ol>
+
+        <h2>Related guides</h2><div class="help-related"><a href="getting-started.html">Getting started</a><a href="signals-actions.html">Alerts and actions</a><a href="checklists.html">Checklists</a></div>
+        <section class="help-support" aria-labelledby="support-title"><h2 id="support-title">Still need help?</h2><p>Email <a href="mailto:reminder@dvkworks.com">reminder@dvkworks.com</a> and describe the recurrence type, the first trigger, and the result you expected.</p></section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="section-inner footer-inner"><span>© 2026 DKReminder</span><div class="footer-links"><a href="index.html">Help Center</a><a href="../privacy-en.html">Privacy Policy</a></div></div></footer>
+</body>
+</html>
