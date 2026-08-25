@@ -36,10 +36,35 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "DKReminder",
-      "url": "https://reminder.dvkworks.com/",
-      "inLanguage": ["en", "uk"]
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://reminder.dvkworks.com/#website",
+          "name": "DKReminder",
+          "alternateName": ["DK Reminder", "DKReminder by DVK Works"],
+          "url": "https://reminder.dvkworks.com/",
+          "inLanguage": ["en", "uk"]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://reminder.dvkworks.com/#app",
+          "name": "DKReminder",
+          "alternateName": "DK Reminder",
+          "description": "A flexible reminder manager for Android.",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "Android",
+          "url": "https://reminder.dvkworks.com/",
+          "installUrl": "https://play.google.com/store/apps/details?id=ua.dkreminder",
+          "sameAs": "https://play.google.com/store/apps/details?id=ua.dkreminder",
+          "isAccessibleForFree": true,
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://dvkworks.com/#organization",
+            "name": "DVK Works",
+            "url": "https://dvkworks.com/"
+          }
+        }
+      ]
     }
   </script>
 </head>
@@ -401,6 +426,7 @@
     <div class="section-inner footer-inner">
       <span>© 2026 DKReminder</span>
       <div class="footer-links">
+        <a href="https://dvkworks.com/">A product by DVK Works</a>
         <a href="help/">Help Center</a>
         <a href="mailto:reminder@dvkworks.com">reminder@dvkworks.com</a>
       </div>
