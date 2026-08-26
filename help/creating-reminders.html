@@ -25,7 +25,7 @@
         <h1>Create one rule, then let it produce the right alerts.</h1>
         <p class="help-lead">A reminder keeps the title, schedule, and settings. An alert is one concrete notification DKReminder shows at a scheduled time. Changing one alert is not the same as changing the whole reminder rule.</p>
 
-        <nav class="help-on-this-page" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#ways-to-create">Ways to create</a></li><li><a href="#guided-scenarios">Meeting and deadline</a></li><li><a href="#once">One-time reminders</a></li><li><a href="#intervals">Minute, hour, and day intervals</a></li><li><a href="#calendar">Daily through yearly</a></li><li><a href="#schedule-anchor">Schedule anchor</a></li><li><a href="#manual-cycle">Manual daily cycle</a></li><li><a href="#active-window">Active window</a></li><li><a href="#end-conditions">End conditions and checks</a></li></ul></nav>
+        <nav class="help-on-this-page" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#ways-to-create">Ways to create</a></li><li><a href="#guided-scenarios">Meeting and deadline</a></li><li><a href="#alert-mode">Alert mode</a></li><li><a href="#recurrence-types">Recurrence types</a></li><li><a href="#once">One-time reminders</a></li><li><a href="#intervals">Minute, hour, and day intervals</a></li><li><a href="#calendar">Daily through yearly</a></li><li><a href="#schedule-anchor">Schedule anchor</a></li><li><a href="#manual-cycle">Manual daily cycle</a></li><li><a href="#active-window">Active window</a></li><li><a href="#end-conditions">End conditions and checks</a></li></ul></nav>
 
         <h2 id="ways-to-create">Choose how to start</h2>
         <details class="help-inline-disclosure"><summary><span class="help-context-trigger">Choose <strong>+</strong> to create a reminder <span class="help-context-question" aria-hidden="true">?</span></span></summary><figure class="help-media"><div class="help-screenshot-viewport"><img src="../assets/screenshots/help/en/reminders-add-location.png" alt="The DKReminder Reminders screen with the Add reminder button highlighted in the top-right corner" width="1080" height="2400" loading="lazy" /><span class="help-screenshot-hotspot" aria-hidden="true"></span></div><figcaption>On the <strong>Reminders</strong> screen, the <strong>+</strong> button is in the top-right corner.</figcaption></figure></details>
@@ -65,7 +65,7 @@
                   <li><strong>Do not start before</strong> sets the earliest allowed date and time for the schedule.</li>
                   <li><strong>Active window</strong> can keep frequent reminders inside part of the day. <a href="#active-window">Learn how the window works.</a></li>
                   <li><strong><a href="#end-conditions">End condition</a></strong> can leave the rule open-ended, stop it on a date, or stop it after a number of occurrences.</li>
-                  <li><strong>Alert mode</strong> chooses notifications, full-screen alerts, or behavior based on importance. <a href="getting-started.html#full-screen">Full-screen access is controlled by Android.</a></li>
+                  <li><strong><a href="#alert-mode">Alert mode</a></strong> chooses notifications, full-screen alerts, or behavior based on importance. Full-screen display also depends on Android access.</li>
                 </ul>
               </figcaption>
             </figure>
@@ -111,23 +111,42 @@
         </div>
         <div class="help-note"><strong>After the scenario:</strong> review the generated title, schedule, and alert settings before saving. Without Pro, existing structured details remain visible and the ordinary reminder fields remain editable.</div>
 
+        <h2 id="alert-mode">Choose how this reminder gets your attention</h2>
+        <p><strong>Alert mode</strong> controls how prominently this reminder tries to appear. The app-wide choice is in Settings. In an individual reminder, you can follow that choice or select a different mode just for this reminder.</p>
+        <div class="help-example-grid"><div class="help-example"><strong>Global setting</strong><p>Uses the mode currently selected in <a href="settings-data-pro.html#settings">Settings</a> when the alert starts. If you later change the app-wide mode, existing reminders with this option follow the new choice.</p></div><div class="help-example"><strong>Notifications only</strong><p>Shows a regular Android notification. Sound and vibration still follow their own reminder settings.</p></div><div class="help-example"><strong>Full-screen alert</strong><p>Tries to put the reminder on the full screen. If Android cannot do that, DKReminder leaves a regular notification instead.</p></div><div class="help-example"><strong>Based on importance</strong><p>High-importance reminders try full screen. Low- and medium-importance reminders use regular notifications.</p></div></div>
+        <h3>What Android permissions change</h3>
+        <ul><li><strong>Notifications must be allowed.</strong> If notifications for DKReminder or its reminder channel are disabled, neither a regular notification nor the full-screen alert can be shown.</li><li><strong>Full-screen access affects only full-screen display.</strong> Without it, Full-screen alert and high-importance alerts in Based on importance mode fall back to a regular notification.</li><li>Even with full-screen access, Android may show a prominent notification instead while you are actively using an unlocked phone.</li><li>Exact-alarm access affects whether an alert can arrive at the precise scheduled time; it does not change the selected alert mode.</li></ul>
+        <div class="help-result"><strong>Expected result:</strong> choose <strong>Global setting</strong> when most reminders should follow one app-wide rule. Choose another mode only when this reminder needs different behavior.</div>
+        <p>To review or restore Android access, open <a href="getting-started.html#notifications">Notifications</a> and <a href="getting-started.html#full-screen">Full-screen alerts</a>.</p>
+
+        <h2 id="recurrence-types">Choose the recurrence type that matches the real rule</h2>
+        <p>The recurrence type answers one question: <em>how should DKReminder calculate the next scheduled time?</em> Choose a calendar type when the weekday or date matters. Choose an interval when the fixed distance between alerts matters.</p>
+        <div class="help-example-grid"><div class="help-example"><strong>Once</strong><p>One alert at one chosen date and time.</p></div><div class="help-example"><strong>Every N minutes, hours, or days</strong><p>A fixed interval beginning with the first trigger. These types can follow the original schedule or count from your response.</p></div><div class="help-example"><strong>Daily, weekly, every N weeks, monthly, or yearly</strong><p>A calendar rule based on selected times, weekdays, a day of the month, or an annual date.</p></div><div class="help-example"><strong>Manual cycle · Pro</strong><p>A daily sequence that begins only when you start it and then repeats inside its active window.</p></div></div>
+        <div class="help-note"><strong>Similar names can produce different dates:</strong> Every 28 days is a fixed 28-day interval; Monthly follows real calendar months. Every 7 days counts from the first trigger; Weekly follows selected weekdays.</div>
+
         <h2 id="once">One-time reminders</h2>
         <p>Choose <strong>Once</strong> for a task that should alert at one specific date and time, such as calling a service desk tomorrow at 10:00.</p>
         <ol><li>Select <strong>Once</strong>.</li><li>Choose the date and time.</li><li>Set importance and how the reminder should appear.</li><li>Save and verify the scheduled time.</li></ol>
         <div class="help-result"><strong>Expected result:</strong> DKReminder creates one scheduled alert. After that alert is resolved, the one-time reminder can move to completed reminders.</div>
 
         <h2 id="intervals">Every N minutes, hours, or days</h2>
-        <p>Use interval recurrence when the distance between alerts matters more than the calendar label.</p>
+        <p>These are three separate recurrence types with the same basic rule. Use them when the distance between alerts matters more than the calendar label.</p>
         <div class="help-example-grid"><div class="help-example"><strong>Every 20 minutes</strong><p>Useful for a short repeated routine inside an active window.</p></div><div class="help-example"><strong>Every 3 hours</strong><p>Creates scheduled points at the chosen interval. Snoozing one alert does not move the main schedule.</p></div><div class="help-example"><strong>Every 2 days</strong><p>Counts fixed day intervals from the first trigger.</p></div><div class="help-example"><strong>Every 28 days</strong><p>Still means a 28-day interval. It is not the same as monthly recurrence.</p></div></div>
         <ol><li>Choose <strong>Every N minutes</strong>, <strong>Every N hours</strong>, or <strong>Every N days</strong>.</li><li>Enter the interval and the <strong>First trigger</strong>.</li><li>Optionally set an active window and an end condition.</li><li>Choose whether the next alert is anchored <strong>By schedule</strong> or, with Pro, <strong>From response time</strong>.</li></ol>
 
         <h2 id="calendar">Daily, weekly, monthly, and yearly schedules</h2>
-        <h3>Daily and weekly</h3>
-        <p><strong>Daily</strong> runs at one or more selected times each calendar day. <strong>Weekly</strong> runs on selected weekdays at the chosen time. <strong>Every N weeks</strong> adds an interval between eligible weeks: the week containing the recurrence-start date sets the phase, and alerts happen on the selected weekdays at that time.</p>
-        <h3>Monthly</h3>
-        <p>Monthly scheduling follows calendar months, not a fixed number of days. Choose a specific day of the month, or use the Pro option that counts back from the actual month end.</p>
-        <ul><li>For a specific day such as the 31st, choose what happens in a shorter month: use its last day, use the first day of the next month, or skip the month.</li><li><strong>From the end of the month · Pro</strong> supports the last day or 1–27 days before month end. The date is recalculated for each real calendar month.</li></ul>
-        <h3>Yearly</h3>
+        <h3 id="daily">Daily</h3>
+        <p><strong>Daily</strong> runs at one or more selected times each calendar day. It is different from Every N days: Daily follows clock times on each eligible day, while Every N days counts a fixed number of days from its first trigger.</p>
+        <h3 id="weekly">Weekly</h3>
+        <p><strong>Weekly</strong> runs every week on one or more selected weekdays at the chosen time. Use it when the weekday itself matters, such as every Monday and Thursday.</p>
+        <h3 id="every-n-weeks">Every N weeks</h3>
+        <p><strong>Every N weeks</strong> skips a chosen number of weeks between active weeks, then runs on the selected weekdays. The week containing the <strong>Recurrence start</strong> sets which weeks belong to the pattern.</p>
+        <h3 id="monthly">Monthly</h3>
+        <p>Monthly scheduling follows calendar months, not a fixed number of days. You can define the date in two ways.</p>
+        <ul><li><strong>On a specific day of the month.</strong> Enter the day number and alert time. If a shorter month does not have that day, the alert follows the app-wide rule or the rule selected for this reminder. Review the <a href="settings-data-pro.html#calendar-exceptions">calendar-exception settings</a>.</li><li><strong>From the end of the month · Pro.</strong> Choose one of two options:<ul><li><strong>On the last day of the month.</strong> Enter the alert time.</li><li><strong>A number of days before the end of the month.</strong> Enter 1–27 days and a time. The reminder alerts once on the calculated date. For example, with “4 days before,” a month ending on August 31 produces August 27, while a month ending on September 30 produces September 26. These are not daily alerts throughout the last four days.</li></ul></li></ul>
+        <p><strong>Do not start before</strong> sets the earliest allowed date. For example, if “4 days before” is selected and the boundary is August 31, the calculated August 27 date is earlier than that boundary. The first alert is therefore September 26.</p>
+        <p>Extra alerts after that date appear only when <a href="signals-actions.html#repeat-missed">repeat alerts without a response</a> are enabled separately.</p>
+        <h3 id="yearly">Yearly</h3>
         <p>Yearly recurrence uses a calendar month and date. If you select February 29, choose the explicit non-leap-year rule: February 28, March 1, or leap years only.</p>
         <div class="help-note"><strong>Schedule boundary:</strong> for Daily, Weekly, Monthly, and Yearly, <strong>Do not start before</strong> is the earliest allowed boundary. The actual alert time comes from the schedule fields.</div>
 
