@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Location reminders — DKReminder Help</title>
+  <meta name="description" content="Create DKReminder alerts for arriving, staying, or leaving a place, grant the required access, and resolve common location reminder problems." />
+  <link rel="canonical" href="https://reminder.dvkworks.com/help/location-reminders.html" />
+  <link rel="alternate" hreflang="en" href="https://reminder.dvkworks.com/help/location-reminders.html" />
+  <link rel="alternate" hreflang="uk" href="https://reminder.dvkworks.com/help/location-reminders-uk.html" />
+  <link rel="alternate" hreflang="x-default" href="https://reminder.dvkworks.com/help/location-reminders.html" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="help.js" defer></script>
+</head>
+<body class="help-page">
+  <header class="help-site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand-link brand-link-light" href="../index.html" aria-label="DKReminder home page"><img src="../assets/app-icon-192.png" alt="" width="38" height="38" /><span>DKReminder</span></a><div class="nav-actions"><div class="language-switch" aria-label="Page language"><a class="language-link" href="location-reminders-uk.html" data-preserve-hash lang="uk" hreflang="uk">UA</a><a class="language-link is-active" href="location-reminders.html" lang="en" hreflang="en" aria-current="page">EN</a></div></div></nav></header>
+  <main class="help-main">
+    <details class="help-mobile-bar"><summary>All sections</summary><nav class="help-section-nav" aria-label="Help sections"><ul><li><a href="overview.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="creating-reminders.html">Creating and recurrence</a></li><li><a href="location-reminders.html" aria-current="page">By location</a></li><li><a href="signals-actions.html">Alerts and actions</a></li><li><a href="checklists.html">Checklists</a></li><li><a href="exchange.html">Exchange</a></li><li><a href="settings-data-pro.html">Settings, data, and Pro</a></li></ul></nav></details>
+    <div class="help-shell">
+      <aside class="help-sidebar"><p class="help-sidebar-title">Help sections</p><nav class="help-section-nav" aria-label="Help sections"><ul><li><a href="overview.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="creating-reminders.html">Creating and recurrence</a></li><li><a href="location-reminders.html" aria-current="page">By location</a></li><li><a href="signals-actions.html">Alerts and actions</a></li><li><a href="checklists.html">Checklists</a></li><li><a href="exchange.html">Exchange</a></li><li><a href="settings-data-pro.html">Settings, data, and Pro</a></li></ul></nav></aside>
+      <article class="help-article">
+        <nav class="help-breadcrumbs" aria-label="Breadcrumbs"><a href="index.html">Help Center</a><span>Location reminders</span></nav>
+        <p class="help-kicker">By location reminders</p>
+        <h1>Get a reminder when you arrive, stay, or leave.</h1>
+        <p class="help-lead">Choose one or more areas on the map. DKReminder waits for the selected event in the background, even when the app is not open. It does not record your route or create an alert in advance for an invented date.</p>
+
+        <nav class="help-on-this-page" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#create">Create a reminder</a></li><li><a href="#when">When it triggers</a></li><li><a href="#places">One or more places</a></li><li><a href="#permissions">Android access</a></li><li><a href="#timing">Accuracy and delay</a></li><li><a href="#find">Where to find it</a></li><li><a href="#problems">Restore monitoring</a></li><li><a href="#exchange-backup">Exchange and backup</a></li></ul></nav>
+
+        <h2 id="create">Create a reminder</h2>
+        <ol>
+          <li>On the <strong>Reminders</strong> screen, tap <strong>+</strong> and choose <strong>By location</strong>.</li>
+          <li>Choose <strong>I arrive</strong> or <strong>I leave</strong>. For arrival, you can alert immediately or only after staying inside the area for the selected time.</li>
+          <li>Set <strong>Not before</strong> if needed.</li>
+          <li>Add a place from the map, use <strong>Current location</strong>, or choose a previously saved place.</li>
+          <li>Add a title, description, or checklist and save the reminder.</li>
+        </ol>
+        <div class="help-note"><strong>Pro is required.</strong> Creating, changing, and actively monitoring location reminders are DKReminder Pro features. If Pro access ends, the reminder and its places are kept, but monitoring pauses until access returns.</div>
+
+        <h2 id="when">What each trigger means</h2>
+        <dl>
+          <dt><strong>I arrive → Immediately</strong></dt><dd>An alert appears after Android detects that you entered the selected area.</dd>
+          <dt><strong>I arrive → After staying</strong></dt><dd>You must remain inside the area continuously for the selected time. A brief entry and exit does not create an alert.</dd>
+          <dt><strong>I leave</strong></dt><dd>An alert appears after you exit the area. To recognize an exit, Android must first observe that you were inside.</dd>
+          <dt><strong>Not before</strong></dt><dd>This is the earliest allowed time, not a scheduled trigger date. After it passes, DKReminder still waits for your arrival, stay, or departure.</dd>
+        </dl>
+
+        <h2 id="places">One or more places</h2>
+        <p>You can add up to ten places to one reminder. The first place that meets the condition creates one active alert. Until you finish it, another place does not create a duplicate alert.</p>
+        <p>If you choose <strong>Remind at another place</strong>, the current place will not trigger again until you leave its area. The other places remain available.</p>
+        <p>A saved place makes it quicker to reuse a point. An existing reminder keeps its own copy of that point, so editing the saved place later does not silently move the reminder.</p>
+
+        <h2 id="permissions">Grant the required Android access</h2>
+        <p>DKReminder asks for precise location first, then separately explains all-the-time background access. Android does not allow both levels to be requested in one step.</p>
+        <ul>
+          <li><strong>Precise location</strong> is needed to select your current point and monitor the area boundary reliably. Approximate location is not enough.</li>
+          <li><strong>Allow all the time</strong> is needed to detect the event while DKReminder is closed or not in use.</li>
+          <li><strong>Device location</strong> must be turned on.</li>
+          <li><strong>Google Play services</strong> must be available to monitor areas.</li>
+          <li><strong>Notifications</strong> are needed to show the alert after the event.</li>
+        </ul>
+        <p>Denying access does not delete the draft, reminder, or places. Open <strong>Settings → Reminder access</strong> to see every status and the appropriate recovery action.</p>
+
+        <h2 id="timing">Accuracy and possible delay</h2>
+        <p>Android decides whether the device crossed an area boundary using the location information available to it. Accuracy can be lower indoors, underground, in dense buildings, during battery saving, or when the device cannot determine its position reliably. In the background, an alert may arrive several minutes after the actual crossing.</p>
+        <div class="help-warning"><strong>This is not a real-time tracker.</strong> DKReminder does not record your route and cannot guarantee an exact trigger second. If you use Force stop in Android settings, open the app again to restore monitoring.</div>
+
+        <h2 id="find">Where the reminder appears</h2>
+        <ul>
+          <li><strong>Calendar → By location</strong> opens unfinished location reminders and shows whether each one is ready to work.</li>
+          <li>A Calendar day shows a location alert only after it actually triggers on that day. A waiting rule is not assigned an invented date.</li>
+          <li><strong>Upcoming</strong> has a separate <strong>By location</strong> section. It is outside Today, Tomorrow, and 7 Days because its trigger date is not known in advance.</li>
+          <li><strong>Active</strong> shows the reminder only after an arrival, stay, or departure actually creates an alert to complete.</li>
+        </ul>
+
+        <h2 id="problems">Restore monitoring</h2>
+        <p>Open the reminder or the <strong>By location</strong> list. DKReminder shows the reason and the matching action.</p>
+        <dl>
+          <dt><strong>Reminder paused</strong></dt><dd>Resume it when you want to wait for the event again.</dd>
+          <dt><strong>Pro required</strong></dt><dd>Your places are kept. Restore Pro to resume monitoring.</dd>
+          <dt><strong>Precise or background access missing</strong></dt><dd>Grant the suggested access. Android opens the app settings for background access.</dd>
+          <dt><strong>Device location off</strong></dt><dd>Turn on location on the device.</dd>
+          <dt><strong>Google Play services unavailable</strong></dt><dd>Check that they are enabled and up to date.</dd>
+          <dt><strong>Device limit reached</strong></dt><dd>Android has a shared limit for monitored areas. Pause or remove unneeded location reminders, then try again.</dd>
+          <dt><strong>Could not activate</strong></dt><dd>Check access and device services, then retry. The reminder itself is not lost.</dd>
+        </dl>
+
+        <h2 id="exchange-backup">Exchange and backup</h2>
+        <p>If you explicitly send a location reminder through Exchange, the record includes the exact selected points, place names, area sizes, and trigger condition. The app shows this before sending. The data remains in Exchange until the relevant record is deleted. The recipient reviews it first and decides whether to create an independent local copy.</p>
+        <p>An Android or manual backup may include location reminders, saved places, and exact points. After restore on another device, DKReminder checks Pro access, permissions, and device services before monitoring starts again.</p>
+        <p>For data details, see the <a href="../privacy-en.html">Privacy Policy</a>. For sending instructions, see <a href="exchange.html#send">Reminder Exchange</a>.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="section-inner footer-inner"><span>© 2026 DKReminder</span><div class="footer-links"><a href="index.html">Help Center</a><a href="../privacy-en.html">Privacy Policy</a><a href="mailto:reminder@dvkworks.com">reminder@dvkworks.com</a></div></div></footer>
+</body>
+</html>

@@ -41,7 +41,7 @@
     </nav>
 
     <h1>Privacy Policy</h1>
-    <p class="muted">App: <strong>DKReminder</strong><br />Last updated: September 3, 2026</p>
+    <p class="muted">App: <strong>DKReminder</strong><br />Last updated: September 24, 2026</p>
 
     <h2>In brief</h2>
     <p>
@@ -57,6 +57,14 @@
       Reminders, reminder settings, trigger history, and details you add to
       scenarios such as meetings and deadlines are stored in the app’s internal
       database on your device.
+    </p>
+    <p>
+      Location reminders may store the exact points you selected, place names,
+      area sizes, trigger condition, and earliest allowed time. Saved places are
+      also stored on the device. When you choose your current location or enable
+      a location reminder, DKReminder uses location data to select the point and
+      detect arrival, staying, or departure. The app does not store your route or
+      keep a continuous history of your movements.
     </p>
     <p>
       You control this local data and can use the core reminder functions without
@@ -91,6 +99,14 @@
       a shared reminder and are not synchronized with one another.
     </p>
     <p>
+      For a location reminder, the snapshot also contains the exact coordinates
+      of the selected places, their names, area sizes, arrival, stay, or departure
+      condition, and the earliest allowed time. The app warns about exact places
+      before sending. This data remains in Exchange until the relevant record is
+      deleted. Any independent local copy already saved by the recipient remains
+      under the recipient’s control.
+    </p>
+    <p>
       The recipient may reject the incoming item or open a prefilled editor and
       save an independent local reminder. After sending, the sender cannot control
       the recipient’s copy and does not learn whether the recipient opened,
@@ -120,7 +136,7 @@
       diagnosis or treatment advice.
     </p>
 
-    <h2>Firebase and other Google services</h2>
+    <h2>Firebase, Google Maps, and other Google services</h2>
     <p>
       DKReminder uses Firebase Authentication, Cloud Firestore, Cloud Functions,
       Cloud Messaging, Firebase Installations, and App Check with Play Integrity.
@@ -128,6 +144,13 @@
       integrity information as needed to provide, secure, and protect these
       services. Data is encrypted in transit and protected at rest by the service
       provider, but Exchange is not end-to-end encrypted.
+    </p>
+    <p>
+      Google Maps and Google Play services help display the map, find your current
+      location when you request it, and monitor selected areas in the background.
+      Google may process map requests, IP address, technical device and app data,
+      and location needed to provide these services. This is governed by the
+      Google policy linked below.
     </p>
     <p>
       Firebase acts as a service provider for DKReminder. Google’s handling of data
@@ -169,9 +192,10 @@
       Depending on your Android and Google Account backup settings, Android may
       include allowed DKReminder data in a system backup or transfer it directly to
       another device. This can include local reminders, their metadata and history,
-      onboarding state, and the initial Pro access start date. These operations are
-      performed by Android’s backup and device-transfer services, not by the
-      DKReminder Exchange service.
+      location reminders, saved places and exact selected points, onboarding state,
+      and the initial Pro access start date. These operations are performed by
+      Android’s backup and device-transfer services, not by the DKReminder Exchange
+      service.
     </p>
     <p>
       Paid subscription confirmation, the local billing cache, account credentials,
@@ -184,9 +208,10 @@
       If you use DKReminder’s <strong>Export data</strong> feature, the app creates
       a backup file in the location you choose. You are responsible for storing,
       sharing, and deleting that file. When you import a backup, its data replaces
-      the current data in the app. The file includes the initial Pro access start
-      date so that restoring it does not create a new 30-day period, but it does not
-      contain paid subscription status, the billing cache, account credentials,
+      the current data in the app. The file can include location reminders, saved
+      places, and exact selected points. It also includes the initial Pro access
+      start date so that restoring it does not create a new 30-day period, but it
+      does not contain paid subscription status, the billing cache, account credentials,
       cloud authentication tokens, or payment information.
     </p>
 
@@ -195,6 +220,8 @@
       <li><strong>Notifications</strong> — to show reminders at the scheduled time.</li>
       <li><strong>Alarms &amp; reminders (exact alarms)</strong> — to trigger reminders at the selected time.</li>
       <li><strong>Full-screen alerts</strong> — to display a prominent reminder alert, including on the lock screen when permitted by Android.</li>
+      <li><strong>Precise location</strong> — to select the current point and detect crossing the boundary of a selected area.</li>
+      <li><strong>Background location</strong> — to detect arrival, staying, or departure while DKReminder is closed or not in use.</li>
       <li><strong>Run after device restart</strong> — to restore scheduled reminders after the device restarts.</li>
       <li><strong>Foreground media playback</strong> — to play the selected reminder sound reliably while an alert is active.</li>
     </ul>
