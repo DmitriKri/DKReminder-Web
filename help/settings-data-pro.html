@@ -24,7 +24,7 @@
         <p class="help-kicker">Settings and ownership</p>
         <h1>Keep DKReminder predictable, portable, and under your control.</h1>
         <p class="help-lead">Settings define app-wide defaults. Backup and restore protect your local data. Pro adds advanced creation and automation, but losing Pro never deletes your reminders.</p>
-        <nav class="help-on-this-page" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#settings">Settings map</a></li><li><a href="#backup">Backup and restore</a></li><li><a href="#restore-limits">Exchange restore limits</a></li><li><a href="#initial-access">Initial Pro access</a></li><li><a href="#subscription">Subscription and restore</a></li><li><a href="#after-pro">After Pro ends</a></li><li><a href="#privacy">Privacy and account deletion</a></li><li><a href="#problems">Troubleshooting</a></li></ul></nav>
+        <nav class="help-on-this-page" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#settings">Settings map</a></li><li><a href="#flip-face-down">Phone flip response</a></li><li><a href="#backup">Backup and restore</a></li><li><a href="#restore-limits">Exchange restore limits</a></li><li><a href="#initial-access">Initial Pro access</a></li><li><a href="#subscription">Subscription and restore</a></li><li><a href="#after-pro">After Pro ends</a></li><li><a href="#privacy">Privacy and account deletion</a></li><li><a href="#problems">Troubleshooting</a></li></ul></nav>
 
         <h2 id="settings">Find the right setting</h2>
         <p>Open <strong>Settings</strong> from the main navigation. Changes here become defaults for the app; a reminder can still have its own supported schedule or alert choices.</p>
@@ -37,6 +37,7 @@
           <div class="help-example" id="calendar-exceptions"><strong>Calendar exceptions</strong><p>The app-wide <strong>Month overflow</strong> rule decides what happens when a shorter month does not have the selected day: use the last day of that month, use the first day of the next month, or skip the month. For reminders set to the 29th–31st, the editor can follow this rule or use a reminder-specific choice. This section also sets the app-wide rule for February 29.</p></div>
           <div class="help-example"><strong>Alert mode</strong><p>Choose the app-wide alert presentation. Android permissions can still limit the result. <a href="creating-reminders.html#alert-mode">Compare all four choices.</a></p></div>
           <div class="help-example"><strong>Sound</strong><p>Choose the default sound, manual-cycle start sound, and consecutive playback count for one alert.</p></div>
+          <div class="help-example"><strong>Phone flip response</strong><p>Enable an action for all currently sounding alerts; off by default. Choose Silence, the default Snooze time, or Done. <a href="#flip-face-down">How to use the gesture and its limits.</a></p></div>
           <div class="help-example"><strong>Global pause</strong><p>Pause every reminder. Occurrences skipped during the pause are not recreated automatically when you resume.</p></div>
           <div class="help-example"><strong>After global pause</strong><p>Paused alerts do not restart automatically when global pause is turned off; handle them separately in Active.</p></div>
           <div class="help-example"><strong>Catalog</strong><p>Restore the default favorite presets. This replaces the current favorite selection and order, not your reminders.</p></div>
@@ -45,6 +46,21 @@
           <div class="help-example"><strong>Reminder exchange account</strong><p>Sign in only if you use Exchange; local reminders work while signed out.</p></div>
           <div class="help-example"><strong>Legal and privacy</strong><p>Open the Privacy Policy. Settings also shows onboarding replay and the app version for diagnostics.</p></div>
         </div>
+
+        <h2 id="flip-face-down">Apply an action by turning the phone face down</h2>
+        <ol><li>Open <strong>Settings → Phone flip response</strong>, between <strong>Sound</strong> and <strong>Global pause</strong>.</li><li>Enable <strong>Action when turned face down</strong>. It is off by default.</li><li>Choose one action. Turning the feature off and back on keeps your selection.</li><li>While an alert is sounding, turn the phone face down and hold it still. A stable transition is required; a brief tilt is not enough.</li></ol>
+        <ul>
+          <li><strong>Silence alert</strong> — the default selection. Stops sound and repeats for the current alert without completing or snoozing the occurrence.</li>
+          <li><strong>Snooze for the default time</strong> — uses the current default from <strong>Settings → Snooze</strong>; its number of minutes appears beside the option. The return time changes, while the target date, reminder schedule, and checklist marks stay unchanged.</li>
+          <li><strong>Mark as done</strong> — completes the current occurrence just like the <strong>Done</strong> button. Later occurrences follow the existing recurrence rules; the gesture does not mark individual checklist items.</li>
+        </ul>
+        <div class="help-warning"><strong>Advance alerts and Done:</strong> Mark as done completes the entire target occurrence and cancels its future main alert. One gesture can complete several occurrences at once.</div>
+        <p>One gesture applies the selected action to <strong>all reminder alerts currently playing sound</strong>. An Active entry or a notification left after sound ends is not a target. A sound that starts after the turn begins needs a new gesture. There are no per-reminder overrides or “one/all” choices.</p>
+        <p>If the phone was already face down before sound began, no action runs automatically. Lift it, let the position settle, and turn it over again. Holding it face down does not repeat the action; lifting it does not restart sound or undo the result. <strong>The soft manual-cycle start alert and vibration-only mode do not support this gesture.</strong></p>
+        <h3>If Snooze cannot be applied</h3>
+        <p>The <a href="signals-actions.html#snooze">existing Snooze restrictions</a> still apply. Advance, location, and daily manual-cycle alerts require Pro. In a manual cycle that measures the interval from completion, the default return must be before the control deadline and the end of the active period; a return exactly at the limit is also rejected. The delay is not shortened automatically, and rejection is not replaced with Silence.</p>
+        <p>If Snooze is unavailable for one reminder, its alert keeps sounding while the other current alerts are processed. A normal notification explains the reason. If notifications are disabled, check Active and use the buttons.</p>
+        <div class="help-note"><strong>Please note:</strong> screen-off gesture support depends on your phone. On some phones, the gesture is available only during the <strong>first 2 minutes of an alert</strong> — Settings will indicate this limit. After that, use the buttons: the alert itself does not stop automatically.</div>
 
         <h2 id="backup">Export a backup or restore one</h2>
         <h3>Create a backup</h3>
